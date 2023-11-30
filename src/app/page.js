@@ -6,7 +6,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
 
 export default function Home() {
-  const sliderSettings = { infinite: true, speed: 10000, slidesToShow: 3, 
+  const sliderSettings = {  className: "center",
+  centerMode: true, infinite: true, speed: 10000, slidesToShow: 3, 
     slidesToScroll: 3, autoplay: true, autoplaySpeed: 4000, pauseOnHover: true, lazyLoad: true };
   return (
     <body className='body'>
@@ -60,6 +61,8 @@ export default function Home() {
           <div className="episode-cell"><img src="/Thumbnails/ep7.png" alt="Unleashing DePIN Episode 7" width='80%'/></div>
           <div className="episode-cell"><img src="/Thumbnails/ep6.png" alt="Unleashing DePIN Episode 6" width='80%'/></div>
         </Slider>
+        <br></br>
+        <br></br>
       </div>
     </body>
   )
