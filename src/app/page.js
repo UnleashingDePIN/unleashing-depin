@@ -6,9 +6,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
 
 export default function Home() {
-  const sliderSettings = { dots: true, infinite: true, speed: 50, slidesToShow: 3, 
-    slidesToScroll: 1, autoplay: true, autoplaySpeed: 4000, pauseOnHover: true, className: "center",
-    centerMode: true, lazyLoad: true };
+  const sliderSettings = { infinite: true, speed: 10000, slidesToShow: 3, 
+    slidesToScroll: 3, autoplay: true, autoplaySpeed: 4000, pauseOnHover: true, lazyLoad: true };
   return (
     <body className='body'>
       <div className="menu">
@@ -53,14 +52,14 @@ export default function Home() {
       <div className="find-us-section">
         <h2>Recent Episodes</h2>
       </div>
-      <div style={{ transform: 'scale(0.9)' }}>        
+      <div style={{ transform: 'scale(0.7)' }}>        
         <Slider {...sliderSettings}>
           <div className="episode-cell"><img src="/Thumbnails/ep10.png" alt="Unleashing DePIN Episode 10" width='80%'/></div>
           <div className="episode-cell"><img src="/Thumbnails/ep9.png" alt="Unleashing DePIN Episode 9" width='80%'/></div>
           <div className="episode-cell"><img src="/Thumbnails/ep8.png" alt="Unleashing DePIN Episode 8" width='80%'/></div>
           <div className="episode-cell"><img src="/Thumbnails/ep7.png" alt="Unleashing DePIN Episode 7" width='80%'/></div>
           <div className="episode-cell"><img src="/Thumbnails/ep6.png" alt="Unleashing DePIN Episode 6" width='80%'/></div>
-       </Slider>
+        </Slider>
       </div>
     </body>
   )
