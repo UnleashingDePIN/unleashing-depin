@@ -14,36 +14,36 @@ export default function Home(props) {
     mobile: { breakpoint: { max: 464, min: 0 }, items: 1, slidesToSlide: 1 }
   };
   const episodes = {
-    ep1: {
-      image: "Thumbnails/ep1.png",
-      youtube: "https://www.youtube.com/@unleashingdepin",
-      spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin",
-      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996"
-    },
-    ep2: {
-      image: "Thumbnails/ep2.png",
-      youtube: "https://www.youtube.com/@unleashingdepin",
-      spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin",
-      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996"
-    },
-    ep3: {
-      image: "Thumbnails/ep3.png",
-      youtube: "https://www.youtube.com/@unleashingdepin",
-      spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin",
-      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996"
-    },
-    ep4: {
-      image: "Thumbnails/ep4.png",
-      youtube: "https://www.youtube.com/@unleashingdepin",
-      spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin",
-      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996"
-    },
-    ep5: {
-      image: "Thumbnails/ep5.png",
-      youtube: "https://www.youtube.com/@unleashingdepin",
-      spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin",
-      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996"
-    },
+    // ep1: {
+    //   image: "Thumbnails/ep1.png",
+    //   youtube: "https://www.youtube.com/@unleashingdepin",
+    //   spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin",
+    //   apple: "https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996"
+    // },
+    // ep2: {
+    //   image: "Thumbnails/ep2.png",
+    //   youtube: "https://www.youtube.com/@unleashingdepin",
+    //   spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin",
+    //   apple: "https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996"
+    // },
+    // ep3: {
+    //   image: "Thumbnails/ep3.png",
+    //   youtube: "https://www.youtube.com/@unleashingdepin",
+    //   spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin",
+    //   apple: "https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996"
+    // },
+    // ep4: {
+    //   image: "Thumbnails/ep4.png",
+    //   youtube: "https://www.youtube.com/@unleashingdepin",
+    //   spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin",
+    //   apple: "https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996"
+    // },
+    // ep5: {
+    //   image: "Thumbnails/ep5.png",
+    //   youtube: "https://www.youtube.com/@unleashingdepin",
+    //   spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin",
+    //   apple: "https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996"
+    // },
     ep6: {
       image: "Thumbnails/ep6.png",
       youtube: "https://www.youtube.com/@unleashingdepin",
@@ -74,19 +74,20 @@ export default function Home(props) {
       spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin",
       apple: "https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996"
     },
-    ep11: {
-      image: "Thumbnails/ep11.png",
-      youtube: "https://www.youtube.com/@unleashingdepin",
-      spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin",
-      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996"
-    },
-    ep12: {
-      image: "Thumbnails/ep12.png",
-      youtube: "https://www.youtube.com/@unleashingdepin",
-      spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin",
-      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996"
-    },
+    // ep11: {
+    //   image: "Thumbnails/ep11.png",
+    //   youtube: "https://www.youtube.com/@unleashingdepin",
+    //   spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin",
+    //   apple: "https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996"
+    // },
+    // ep12: {
+    //   image: "Thumbnails/ep12.png",
+    //   youtube: "https://www.youtube.com/@unleashingdepin",
+    //   spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin",
+    //   apple: "https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996"
+    // },
   }
+  const episodesArray = Object.values(episodes);
   return (
     <body className='body'>
       <div className="menu">
@@ -133,85 +134,27 @@ export default function Home(props) {
         <Carousel swipeable={true} draggable={true} showDots={false} responsive={responsive} ssr={true}
           infinite={true}
           autoPlay={props.deviceType !== "mobile" ? true : false}
-          autoPlaySpeed={1000} keyBoardControl={true} customTransition="all .5" transitionDuration={500} containerClass="carousel-container"
+          autoPlaySpeed={3000} keyBoardControl={true} customTransition="all .5" transitionDuration={500} containerClass="carousel-container"
           removeArrowOnDeviceType={["tablet", "mobile"]} deviceType={props.deviceType} dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
         >
-          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-            <img src="/Thumbnails/ep10.png" alt="Unleashing DePIN Episode 10" width='80%' draggable="false" />
-            <br></br>
-            <div className="SocialButtons">
-              <a href="https://podcasters.spotify.com/pod/show/unleashing-depin" className="other-icon">
-                <img src="/spotify-svgrepo-com (2).png" alt="Spotify" height="100%" />
-              </a>
-              <a href="https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996" className="other-icon">
-                <img src="/apple-podcast.234x256.png" alt="Apple Podcasts" height="100%" />
-              </a>
-              <a href="https://www.youtube.com/@unleashingdepin" className="other-icon">
-                <img src="/youtube-svgrepo-com.png" alt="YouTube" height="100%" />
-              </a>
+          {episodesArray.map((episode, index) => (
+            <div key={index} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+              <img src={episode.image} alt={`Unleashing DePIN Episode ${index + 1}`} width='80%' draggable="false" />
+              <br></br>
+              <div className="SocialButtons">
+                <a href={episode.spotify} className="other-icon">
+                  <img src="/spotify-svgrepo-com (2).png" alt="Spotify" height="100%" />
+                </a>
+                <a href={episode.apple} className="other-icon">
+                  <img src="/apple-podcast.234x256.png" alt="Apple Podcasts" height="100%" />
+                </a>
+                <a href={episode.youtube} className="other-icon">
+                  <img src="/youtube-svgrepo-com.png" alt="YouTube" height="100%" />
+                </a>
+              </div>
             </div>
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-            <img src="/Thumbnails/ep9.png" alt="Unleashing DePIN Episode 9" width='80%' draggable="false" />
-            <br></br>
-            <div className="SocialButtons">
-              <a href="https://podcasters.spotify.com/pod/show/unleashing-depin" className="other-icon">
-                <img src="/spotify-svgrepo-com (2).png" alt="Spotify" height="100%" />
-              </a>
-              <a href="https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996" className="other-icon">
-                <img src="/apple-podcast.234x256.png" alt="Apple Podcasts" height="100%" />
-              </a>
-              <a href="https://www.youtube.com/@unleashingdepin" className="other-icon">
-                <img src="/youtube-svgrepo-com.png" alt="YouTube" height="100%" />
-              </a>
-            </div>
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-            <img src="/Thumbnails/ep8.png" alt="Unleashing DePIN Episode 8" width='80%' draggable="false" />
-            <br></br>
-            <div className="SocialButtons">
-              <a href="https://podcasters.spotify.com/pod/show/unleashing-depin" className="other-icon">
-                <img src="/spotify-svgrepo-com (2).png" alt="Spotify" height="100%" />
-              </a>
-              <a href="https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996" className="other-icon">
-                <img src="/apple-podcast.234x256.png" alt="Apple Podcasts" height="100%" />
-              </a>
-              <a href="https://www.youtube.com/@unleashingdepin" className="other-icon">
-                <img src="/youtube-svgrepo-com.png" alt="YouTube" height="100%" />
-              </a>
-            </div>
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-            <img src="/Thumbnails/ep7.png" alt="Unleashing DePIN Episode 7" width='80%' draggable="false" />
-            <br></br>
-            <div className="SocialButtons">
-              <a href="https://podcasters.spotify.com/pod/show/unleashing-depin" className="other-icon">
-                <img src="/spotify-svgrepo-com (2).png" alt="Spotify" height="100%" />
-              </a>
-              <a href="https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996" className="other-icon">
-                <img src="/apple-podcast.234x256.png" alt="Apple Podcasts" height="100%" />
-              </a>
-              <a href="https://www.youtube.com/@unleashingdepin" className="other-icon">
-                <img src="/youtube-svgrepo-com.png" alt="YouTube" height="100%" />
-              </a>
-            </div>
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-            <img src="/Thumbnails/ep6.png" alt="Unleashing DePIN Episode 6" width='80%' draggable="false" />
-            <br></br>
-            <div className="SocialButtons">
-              <a href="https://podcasters.spotify.com/pod/show/unleashing-depin" className="other-icon">
-                <img src="/spotify-svgrepo-com (2).png" alt="Spotify" height="100%" />
-              </a>
-              <a href="https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996" className="other-icon">
-                <img src="/apple-podcast.234x256.png" alt="Apple Podcasts" height="100%" />
-              </a>
-              <a href="https://www.youtube.com/@unleashingdepin" className="other-icon">
-                <img src="/youtube-svgrepo-com.png" alt="YouTube" height="100%" />
-              </a>
-            </div>
-          </div>
+          ))}
         </Carousel>;
       </div>
     </body>
