@@ -122,6 +122,11 @@ body {
     size: 10px
 }
 
+.center-carousel {
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (max-width: 860px) {
     .find-us-section {
         margin-top: 100px;
