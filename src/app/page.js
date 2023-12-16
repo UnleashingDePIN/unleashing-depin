@@ -9,8 +9,8 @@ import "react-multi-carousel/lib/styles.css";
 
 export default function Home(props) {
   const responsive = {
-    desktop: { breakpoint: { max: 3000, min: 1024 }, items: 3, slidesToSlide: 3 },
-    tablet: { breakpoint: { max: 1024, min: 464 }, items: 2, slidesToSlide: 2 },
+    desktop: { breakpoint: { max: 3000, min: 1024 }, items: 3, slidesToSlide: 1 },
+    tablet: { breakpoint: { max: 1024, min: 464 }, items: 2, slidesToSlide: 1 },
     mobile: { breakpoint: { max: 464, min: 0 }, items: 1, slidesToSlide: 1 }
   };
   const episodes = {
@@ -115,7 +115,8 @@ export default function Home(props) {
         <h2>Your favorite podcast for everything DePIN!</h2>
         <h3>Hosted by Tyler Boscolo</h3>
       </div>
-      <div className="find-us-section">
+      <br></br>
+      {/* <div className="find-us-section">
         <h2>Watch us on:</h2>
         <div className="social-logos">
           <a href="https://podcasters.spotify.com/pod/show/unleashing-depin" className="social-logo-link">
@@ -128,7 +129,7 @@ export default function Home(props) {
             <img src="/Watch on YouTube.png" alt="Unleashing DePIN on YouTube" width="200" height="75" />
           </a>
         </div>
-      </div>
+      </div> */}
       <div className="find-us-section"><h2>Recent Episodes</h2></div>
       <div>
         <Carousel swipeable={true} draggable={true} showDots={false} responsive={responsive} ssr={true}
@@ -156,6 +157,17 @@ export default function Home(props) {
             </div>
           ))}
         </Carousel>;
+      </div>
+      <div className="find-us-section"><h2>Our Team</h2></div>
+      <div className="team-section">
+        <a href="https://podcasters.spotify.com/pod/show/unleashing-depin" className="team-link">
+            <img src="tyler.jpg" alt="Tyler Boscolo" width="400" height="400" />
+            <div className="team-text"><h2>Tyler Boscolo</h2></div>
+          </a>
+          <a href="https://podcasters.spotify.com/pod/show/unleashing-depin" className="team-link">
+            <img src="nick.png" alt="Nick Carpinito" width="400" height="400" />
+            <div className="team-text"><h2>Nick Carpinito</h2></div>
+          </a>
       </div>
     </body>
   )

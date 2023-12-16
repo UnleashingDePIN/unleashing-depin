@@ -42,7 +42,7 @@ body {
 
 .hero-text {
     text-align: center;
-    margin: 150px 0;
+    /* margin: 150px 0; */
 }
 
 .hero-text h1 {
@@ -95,6 +95,27 @@ body {
     font-size: 1.8em;
     margin-bottom: 20px;
     color: #ffffff;
+}
+
+.team-section {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Add this line */
+}
+
+.team-link {
+    margin: 20px 100px 20px 100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-text h2 {
+    font-family: "Bebas Neue-Regular", sans-serif;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #11ca65;
 }
 
 .social-logos {
