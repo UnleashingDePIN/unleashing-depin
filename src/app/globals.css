@@ -118,6 +118,13 @@ body {
     color: #11ca65;
 }
 
+.team-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    size: 10px;
+}
+
 .social-logos {
     display: flex;
     justify-content: space-around;

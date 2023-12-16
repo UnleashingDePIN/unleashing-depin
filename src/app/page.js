@@ -160,14 +160,30 @@ export default function Home(props) {
       </div>
       <div className="find-us-section"><h2>Our Team</h2></div>
       <div className="team-section">
-        <a href="https://podcasters.spotify.com/pod/show/unleashing-depin" className="team-link">
-            <img src="tyler.jpg" alt="Tyler Boscolo" width="400" height="400" />
-            <div className="team-text"><h2>Tyler Boscolo</h2></div>
-          </a>
-          <a href="https://podcasters.spotify.com/pod/show/unleashing-depin" className="team-link">
-            <img src="nick.png" alt="Nick Carpinito" width="400" height="400" />
-            <div className="team-text"><h2>Nick Carpinito</h2></div>
-          </a>
+        <a className="team-link">
+          <img src="tyler.jpg" alt="Tyler Boscolo" width="400" height="400" />
+          <div className="team-text"><h2>Tyler Boscolo</h2></div>
+          <div className="team-buttons">
+            <a href="https://www.linkedin.com/in/tyler-boscolo-2965a4285/" className="other-icon">
+              <img src="/linkedin-white-1.png" alt="Spotify" height="100%" />
+            </a>
+            <a href="https://twitter.com/tylerboscolo" className="other-icon">
+              <img src="/X (formerly Twitter) Logo.png" alt="X Formerly Twitter Logo" height="100%" />
+            </a>
+          </div>
+        </a>
+        <a className="team-link">
+          <img src="nick.png" alt="Nick Carpinito" width="400" height="400" />
+          <div className="team-text"><h2>Nick Carpinito</h2></div>
+          <div className="team-buttons">
+            <a href="https://www.linkedin.com/in/nick-carpinito/" className="other-icon">
+              <img src="/linkedin-white-1.png" alt="Spotify" height="100%"/>
+            </a>
+            <a href="https://twitter.com/0xmetalight" className="other-icon">
+              <img src="/X (formerly Twitter) Logo.png" alt="X Formerly Twitter Logo" height="100%" />
+            </a>
+          </div>
+        </a>
       </div>
     </body>
   )
