@@ -74,18 +74,24 @@ export default function Home(props) {
       spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-010---A-Conversation-With-Gabe-From-Hivemapper-e2bevl5",
       apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-010-a-conversation-with-gabe/id1643813996?i=1000633640584"
     },
-    // ep11: {
-    //   image: "Thumbnails/ep11.png",
-    //   youtube: "https://www.youtube.com/watch?v=JoN6uzHvnVg",
-    //   spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-011---DePIN-Powered-Noise-Pollution-Mapping-With-Silencio-Network-e2chku9",
-    //   apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-011-depin-powered-noise-pollution/id1643813996?i=1000636850604"
-    // },
+    ep11: {
+      image: "Thumbnails/ep11.png",
+      youtube: "https://www.youtube.com/watch?v=JoN6uzHvnVg",
+      spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-011---DePIN-Powered-Noise-Pollution-Mapping-With-Silencio-Network-e2chku9",
+      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-011-depin-powered-noise-pollution/id1643813996?i=1000636850604"
+    },
     ep12: {
       image: "Thumbnails/ep12.png",
       youtube: "https://www.youtube.com/watch?v=UgdkuFpbk4c",
       spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-012---The-Mycelium-Testbed---A-DePIN-Utility---With-Rishi-Mittal-e2cospj",
       apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-012-the-mycelium-testbed-a/id1643813996?i=1000637364497"
     },
+    // ep13: {
+    //   image: "Thumbnails/ep13.png",
+    //   youtube: "https://www.youtube.com/watch?v=7BRezDfQ1fE", --fix
+    //   spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-013---A-Conversation-With-DeWi-Community-Member--Erik-Hoel-e2d3f2b", -fix
+    //   apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-013-a-conversation-with-dewi-community/id1643813996?i=1000637364498" --fix
+    // },
   }
   const episodesArray = Object.values(episodes);
   return (
