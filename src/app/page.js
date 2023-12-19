@@ -114,6 +114,9 @@ export default function Home(props) {
           <a href="https://twitter.com/UnleashingDeWi" className="other-icon">
             <img src="/X (formerly Twitter) Logo.png" alt="X Formerly Twitter Logo" height="100%" />
           </a>
+          <a href="mailto:hello@unleashingdepin.com" className="other-icon">
+            <img src="/mail.png" alt="Email" height="100%" />
+          </a>
         </div>
       </div>
       <div className="hero-text">
