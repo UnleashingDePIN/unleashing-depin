@@ -195,11 +195,6 @@ export default function Home(props) {
           </div>
         </a>
       </div>
-      import { Widget } from '@typeform/embed-react'
-
-const MyComponent = () => {
-  return <Widget id="<form-id>" style={{ width: '50%' }} className="my-form" />
-}
     </body>
   )
 }
