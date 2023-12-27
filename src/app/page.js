@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Widget from "@typeform/embed-react";
 
 export default function Home(props) {
   const responsive = {
@@ -148,7 +149,7 @@ export default function Home(props) {
           removeArrowOnDeviceType={["tablet", "mobile"]} deviceType={props.deviceType} dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
         >
-          {episodesArray.map((episode, index) => (
+          {episodesArray.reverse().map((episode, index) => (
             <div key={index} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
               <img src={episode.image} alt={`Unleashing DePIN Episode ${index + 1}`} width='80%' draggable="false" />
               <br></br>
@@ -194,6 +195,11 @@ export default function Home(props) {
           </div>
         </a>
       </div>
+      import { Widget } from '@typeform/embed-react'
+
+const MyComponent = () => {
+  return <Widget id="<form-id>" style={{ width: '50%' }} className="my-form" />
+}
     </body>
   )
 }
