@@ -22,7 +22,7 @@ body {
 
 .SocialButtons {
     display: flex;
-    size: 8px;
+    size: 10px;
 }
 
 .apple-logo-icon {
@@ -32,8 +32,8 @@ body {
 }
 
 .other-icon {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
     margin-right: 20px;
     transition: transform 0.3s ease-in-out;
 }
