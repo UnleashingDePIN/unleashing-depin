@@ -179,7 +179,7 @@ export default function Home(props) {
       <div className="find-us-section"><h2>Our Team</h2></div>
       <div className="team-section">
         <a className="team-link">
-          <img src="tyler.jpg" alt="Tyler Boscolo" width="400" height="400" />
+          <img src="tyler.jpg" alt="Tyler Boscolo" width="500" height="500" />
           <div className="team-text"><h2>Tyler Boscolo</h2></div>
           <div className="team-buttons">
             <a href="https://www.linkedin.com/in/tyler-boscolo" className="other-icon">
@@ -191,7 +191,7 @@ export default function Home(props) {
           </div>
         </a>
         <a className="team-link">
-          <img src="nick.png" alt="Nick Carpinito" width="400" height="400" />
+          <img src="nick.png" alt="Nick Carpinito" width="500" height="500" />
           <div className="team-text"><h2>Nick Carpinito</h2></div>
           <div className="team-buttons">
             <a href="https://www.linkedin.com/in/nick-carpinito/" className="other-icon">
