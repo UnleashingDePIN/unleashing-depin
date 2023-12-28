@@ -89,11 +89,17 @@ export default function Home(props) {
       spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-012---The-Mycelium-Testbed---A-DePIN-Utility---With-Rishi-Mittal-e2cospj",
       apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-012-the-mycelium-testbed-a/id1643813996?i=1000637364497"
     },
-    // ep13: {
-    //   image: "Thumbnails/ep13.png",
-    //   youtube: "https://www.youtube.com/watch?v=7BRezDfQ1fE", --fix
-    //   spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-013---A-Conversation-With-DeWi-Community-Member--Erik-Hoel-e2d3f2b", -fix
-    //   apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-013-a-conversation-with-dewi-community/id1643813996?i=1000637364498" --fix
+    ep13: {
+      image: "Thumbnails/ep13.png",
+      youtube: "https://www.youtube.com/watch?v=TNmevmFh0DA",
+      spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-013---The-Intersection-Of-Ai-And-DePIN-With-Fetch-ai-and-peaq-e2dgj81",
+      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-013-the-intersection-of-ai-and/id1643813996?i=1000639362973"
+    },
+    // ep14: {
+    //   image: "Thumbnails/ep14.png",
+    //   youtube: "https://www.youtube.com/watch?v=z2qJUsiyBZ0",
+    //   spotify: "",
+    //   apple: ""
     // },
   }
   const episodesArray = Object.values(episodes);
@@ -105,16 +111,16 @@ export default function Home(props) {
           <img src="/Unleashing DePIN Logo .png" alt="Unleashing DePIN" width="200" height="75" />
         </div>
         <div className="SocialButtons">
-          <a href="https://podcasters.spotify.com/pod/show/unleashing-depin" className="other-icon">
+          <a href="https://podcasters.spotify.com/pod/show/unleashing-depin" className="other-icon" target="_blank">
             <img src="/spotify-svgrepo-com (2).png" alt="Spotify" height="100%" />
           </a>
-          <a href="https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996" className="other-icon">
+          <a href="https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996" className="other-icon" target="_blank">
             <img src="/apple-podcast.234x256.png" alt="Apple Podcasts" height="100%" />
           </a>
-          <a href="https://www.youtube.com/@unleashingdepin" className="other-icon">
+          <a href="https://www.youtube.com/@unleashingdepin" className="other-icon" target="_blank">
             <img src="/youtube-svgrepo-com.png" alt="YouTube" height="100%" />
           </a>
-          <a href="https://twitter.com/UnleashingDeWi" className="other-icon">
+          <a href="https://twitter.com/UnleashingDeWi" className="other-icon" target="_blank">
             <img src="/X (formerly Twitter) Logo.png" alt="X Formerly Twitter Logo" height="100%" />
           </a>
           <a href="mailto:hello@unleashingdepin.com" className="other-icon">
@@ -156,13 +162,13 @@ export default function Home(props) {
               <img src={episode.image} alt={`Unleashing DePIN Episode ${index + 1}`} width='80%' draggable="false" />
               <br></br>
               <div className="SocialButtons">
-                <a href={episode.spotify} className="other-icon">
+                <a href={episode.spotify} className="other-icon" target="_blank">
                   <img src="/spotify-svgrepo-com (2).png" alt="Spotify" height="100%" />
                 </a>
-                <a href={episode.apple} className="other-icon">
+                <a href={episode.apple} className="other-icon" target="_blank">
                   <img src="/apple-podcast.234x256.png" alt="Apple Podcasts" height="100%" />
                 </a>
-                <a href={episode.youtube} className="other-icon">
+                <a href={episode.youtube} className="other-icon" target="_blank">
                   <img src="/youtube-svgrepo-com.png" alt="YouTube" height="100%" />
                 </a>
               </div>
