@@ -7,6 +7,9 @@ import Image from 'next/image';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Widget from "@typeform/embed-react";
+import TypeformEmbed from './components/TypeformEmbed';
+
+// ... rest of your code ...
 
 export default function Home(props) {
   const responsive = {
@@ -195,6 +198,11 @@ export default function Home(props) {
           </div>
         </a>
       </div>
+      return (
+          <div>
+            <TypeformEmbed />
+          </div>
+        );
     </body>
   )
 }
