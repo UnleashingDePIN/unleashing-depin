@@ -172,5 +172,10 @@ body {
     .social-logo-link {
         margin-bottom: 1px;
     }
+
+    .Logo img {
+        width: 100%;
+        height: auto;
+    }
 }
 
