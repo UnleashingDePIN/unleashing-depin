@@ -8,8 +8,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Widget from "@typeform/embed-react";
 import TypeformEmbed from './components/TypeformEmbed';
-
-// ... rest of your code ...
+import './styles.css';
 
 export default function Home(props) {
   const responsive = {
