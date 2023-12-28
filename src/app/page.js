@@ -133,7 +133,7 @@ export default function Home(props) {
         <h2>Your favorite podcast for everything DePIN!</h2>
         <h3>Hosted by Tyler Boscolo</h3>
       </div>
-      <br></br>
+      {/* <br></br> */}
       {/* <div className="find-us-section">
         <h2>Watch us on:</h2>
         <div className="social-logos">
