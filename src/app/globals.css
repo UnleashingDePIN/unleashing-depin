@@ -35,7 +35,7 @@ body {
 .other-icon {
     width: 24px;
     height: 24px;
-    margin-right: 6px;
+    margin-right: 10px;
     transition: transform 0.3s ease-in-out;
 }
 
