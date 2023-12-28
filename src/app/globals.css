@@ -5,6 +5,7 @@ body {
     font-family: "Inter", sans-serif;
     height: 100vh;
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 .menu {

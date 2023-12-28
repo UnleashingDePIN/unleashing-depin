@@ -203,11 +203,7 @@ export default function Home(props) {
           </div>
         </a>
       </div>
-      return (
-          <div>
-            <TypeformEmbed />
-          </div>
-        );
+      return (<div><TypeformEmbed/></div>);
     </body>
   )
 }
