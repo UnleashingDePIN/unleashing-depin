@@ -176,7 +176,7 @@ export default function Home(props) {
           <img src="tyler.jpg" alt="Tyler Boscolo" width="400" height="400" />
           <div className="team-text"><h2>Tyler Boscolo</h2></div>
           <div className="team-buttons">
-            <a href="https://www.linkedin.com/in/tyler-boscolo-2965a4285/" className="other-icon">
+            <a href="https://www.linkedin.com/in/tyler-boscolo" className="other-icon">
               <img src="/linkedin-white-1.png" alt="Spotify" height="100%" />
             </a>
             <a href="https://twitter.com/tylerboscolo" className="other-icon">
