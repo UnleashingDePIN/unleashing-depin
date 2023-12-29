@@ -95,12 +95,12 @@ export default function Home(props) {
       spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-013---The-Intersection-Of-Ai-And-DePIN-With-Fetch-ai-and-peaq-e2dgj81",
       apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-013-the-intersection-of-ai-and/id1643813996?i=1000639362973"
     },
-    // ep14: {
-    //   image: "Thumbnails/ep14.png",
-    //   youtube: "https://www.youtube.com/watch?v=z2qJUsiyBZ0",
-    //   spotify: "",
-    //   apple: ""
-    // },
+    ep14: {
+      image: "Thumbnails/ep14.png",
+      youtube: "https://www.youtube.com/watch?v=z2qJUsiyBZ0",
+      spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-Ep-014---The-State-Of-DeWi-Deployments-With-LongFI-Solutions-e2dotq5",
+      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-ep-014-the-state-of-dewi/id1643813996?i=1000639967281"
+    },
   }
   const episodesArray = Object.values(episodes);
   return (
