@@ -101,27 +101,27 @@ export default function Home(props) {
   }
   const episodesArray = Object.values(episodes);
   return (
-    <body className='body'>
+    <div className='body'>
       <div className="menu">
         <div>
-          <a href="https://unleashingdepin.com" className="logo" />
-          <img src="/Unleashing DePIN Logo .png" alt="Unleashing DePIN" width="200" height="75" />
+          <a href="https://unleashingdepin.com" className="logo"/>
+          <img src="unleashing-depin.png" alt="Unleashing DePIN" width="200" height="75"/>
         </div>
         <div className="SocialButtons">
           <a href="https://podcasters.spotify.com/pod/show/unleashing-depin" className="other-icon" target="_blank" rel="noreferrer">
-            <img src="/spotify-svgrepo-com (2).png" alt="Spotify" height="100%" />
+            <img src="spotify.png" alt="Spotify" height="100%"/>
           </a>
           <a href="https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996" className="other-icon" target="_blank" rel="noreferrer">
-            <img src="/apple-podcast.234x256.png" alt="Apple Podcasts" height="100%" />
+            <img src="apple.png" alt="Apple Podcasts" height="100%"/>
           </a>
           <a href="https://www.youtube.com/@unleashingdepin" className="other-icon" target="_blank" rel="noreferrer">
-            <img src="/youtube-svgrepo-com.png" alt="YouTube" height="100%" />
+            <img src="youtube.png" alt="YouTube" height="100%"/>
           </a>
           <a href="https://twitter.com/UnleashingDeWi" className="other-icon" target="_blank" rel="noreferrer">
-            <img src="/X (formerly Twitter) Logo.png" alt="X Formerly Twitter Logo" height="100%" />
+            <img src="x.png" alt="X Formerly Twitter Logo" height="100%"/>
           </a>
           <a href="mailto:hello@unleashingdepin.com" className="other-icon">
-            <img src="/mail.png" alt="Email" height="100%" />
+            <img src="mail.png" alt="Email" height="100%"/>
           </a>
         </div>
       </div>
@@ -145,14 +145,14 @@ export default function Home(props) {
               <img src={episode.image} alt={`Unleashing DePIN Episode ${index + 1}`} width='80%' draggable="false" />
               <br></br>
               <div className="SocialButtons">
-                <a href={episode.spotify} className="other-icon" target="_blank">
-                  <img src="/spotify-svgrepo-com (2).png" alt="Spotify" height="100%" />
+                <a href={episode.spotify} className="other-icon" target="_blank" rel="noreferrer">
+                  <img src="spotify.png" alt="Spotify" height="100%"/>
                 </a>
-                <a href={episode.apple} className="other-icon" target="_blank">
-                  <img src="/apple-podcast.234x256.png" alt="Apple Podcasts" height="100%" />
+                <a href={episode.apple} className="other-icon" target="_blank" rel="noreferrer">
+                  <img src="apple.png" alt="Apple Podcasts" height="100%"/>
                 </a>
-                <a href={episode.youtube} className="other-icon" target="_blank">
-                  <img src="/youtube-svgrepo-com.png" alt="YouTube" height="100%" />
+                <a href={episode.youtube} className="other-icon" target="_blank" rel="noreferrer">
+                  <img src="youtube.png" alt="YouTube" height="100%"/>
                 </a>
               </div>
             </div>
@@ -162,31 +162,31 @@ export default function Home(props) {
       <div className="find-us-section"><h2>Our Team</h2></div>
       <div className="team-section">
         <a className="team-link">
-          <img src="tyler.jpg" alt="Tyler Boscolo" width="400" height="400" />
+          <img src="tyler.jpg" alt="Tyler Boscolo" width="400" height="400"/>
           <div className="team-text"><h2>Tyler Boscolo</h2></div>
           <div className="team-buttons">
             <a href="https://www.linkedin.com/in/tyler-boscolo" className="other-icon">
-              <img src="/linkedin-white-1.png" alt="Spotify" height="100%" />
+              <img src="/linkedin.png" alt="LinkedIn" height="100%"/>
             </a>
             <a href="https://twitter.com/tylerboscolo" className="other-icon">
-              <img src="/X (formerly Twitter) Logo.png" alt="X Formerly Twitter Logo" height="100%" />
+              <img src="x.png" alt="X Logo" height="100%"/>
             </a>
           </div>
         </a>
         <a className="team-link">
-          <img src="nick.png" alt="Nick Carpinito" width="400" height="400" />
+          <img src="nick.png" alt="Nick Carpinito" width="400" height="400"/>
           <div className="team-text"><h2>Nick Carpinito</h2></div>
           <div className="team-buttons">
             <a href="https://www.linkedin.com/in/nick-carpinito/" className="other-icon">
-              <img src="/linkedin-white-1.png" alt="Spotify" height="100%"/>
+              <img src="linkedin.png" alt="LinkedIn" height="100%"/>
             </a>
             <a href="https://twitter.com/0xmetalight" className="other-icon">
-              <img src="/X (formerly Twitter) Logo.png" alt="X Formerly Twitter Logo" height="100%" />
+              <img src="x.png" alt="X Logo" height="100%"/>
             </a>
           </div>
         </a>
       </div>
-      return (<div><TypeformEmbed/></div>);
-    </body>
+      <div><TypeformEmbed/></div>
+    </div>
   )
 }
