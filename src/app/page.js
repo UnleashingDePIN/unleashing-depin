@@ -1,12 +1,9 @@
 "use client"
 import React from 'react';
-import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Image from 'next/image';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Widget from "@typeform/embed-react";
 import TypeformEmbed from './components/TypeformEmbed';
 import './styles.css';
 
@@ -111,16 +108,16 @@ export default function Home(props) {
           <img src="/Unleashing DePIN Logo .png" alt="Unleashing DePIN" width="200" height="75" />
         </div>
         <div className="SocialButtons">
-          <a href="https://podcasters.spotify.com/pod/show/unleashing-depin" className="other-icon" target="_blank">
+          <a href="https://podcasters.spotify.com/pod/show/unleashing-depin" className="other-icon" target="_blank" rel="noreferrer">
             <img src="/spotify-svgrepo-com (2).png" alt="Spotify" height="100%" />
           </a>
-          <a href="https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996" className="other-icon" target="_blank">
+          <a href="https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996" className="other-icon" target="_blank" rel="noreferrer">
             <img src="/apple-podcast.234x256.png" alt="Apple Podcasts" height="100%" />
           </a>
-          <a href="https://www.youtube.com/@unleashingdepin" className="other-icon" target="_blank">
+          <a href="https://www.youtube.com/@unleashingdepin" className="other-icon" target="_blank" rel="noreferrer">
             <img src="/youtube-svgrepo-com.png" alt="YouTube" height="100%" />
           </a>
-          <a href="https://twitter.com/UnleashingDeWi" className="other-icon" target="_blank">
+          <a href="https://twitter.com/UnleashingDeWi" className="other-icon" target="_blank" rel="noreferrer">
             <img src="/X (formerly Twitter) Logo.png" alt="X Formerly Twitter Logo" height="100%" />
           </a>
           <a href="mailto:hello@unleashingdepin.com" className="other-icon">
@@ -134,20 +131,6 @@ export default function Home(props) {
         <h3>Hosted by Tyler Boscolo</h3>
       </div>
       <br></br>
-      {/* <div className="find-us-section">
-        <h2>Watch us on:</h2>
-        <div className="social-logos">
-          <a href="https://podcasters.spotify.com/pod/show/unleashing-depin" className="social-logo-link">
-            <img src="/Listen on Spotify.png" alt="Unleashing DePIN onSpotify" width="200" height="75" />
-          </a>
-          <a href="https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996" className="social-logo-link">
-            <img src="/Listen on Apple.png" alt="Unleashing DePIN on Apple Podcasts" width="200" height="75" />
-          </a>
-          <a href="https://www.youtube.com/@unleashingdepin" className="social-logo-link">
-            <img src="/Watch on YouTube.png" alt="Unleashing DePIN on YouTube" width="200" height="75" />
-          </a>
-        </div>
-      </div> */}
       <div className="find-us-section"><h2>Recent Episodes</h2></div>
       <div>
         <Carousel swipeable={true} draggable={true} showDots={false} responsive={responsive} ssr={true}
