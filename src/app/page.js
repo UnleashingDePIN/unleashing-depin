@@ -133,12 +133,10 @@ export default function Home(props) {
       <br></br>
       <div className="find-us-section"><h2>Recent Episodes</h2></div>
       <div>
-        <Carousel swipeable={true} draggable={true} showDots={false} responsive={responsive} ssr={true}
-          infinite={true}
-          autoPlay={props.deviceType !== "mobile" ? true : false}
-          autoPlaySpeed={3000} keyBoardControl={true} customTransition="all .5" transitionDuration={500} containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]} deviceType={props.deviceType} dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
+        <Carousel swipeable={true} draggable={true} showDots={false} responsive={responsive} ssr={true} infinite={true} 
+          autoPlay={props.deviceType !== "mobile" ? true : false} autoPlaySpeed={3000} keyBoardControl={true} customTransition="all .5" 
+          transitionDuration={500} containerClass="carousel-container" removeArrowOnDeviceType={["tablet", "mobile"]} 
+          deviceType={props.deviceType} dotListClass="custom-dot-list-style" itemClass="carousel-item-padding-40-px"
         >
           {episodesArray.reverse().map((episode, index) => (
             <div key={index} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
