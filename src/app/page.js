@@ -104,24 +104,24 @@ export default function Home(props) {
     <div className='body'>
       <div className="menu">
         <div>
-          <a href="https://unleashingdepin.com" className="logo"/>
-          <img src="unleashing-depin.png" alt="Unleashing DePIN" width="200" height="75"/>
+          <a href="https://unleashingdepin.com" className="logo" />
+          <img src="unleashing-depin.png" alt="Unleashing DePIN" width="200" height="75" />
         </div>
         <div className="SocialButtons">
           <a href="https://podcasters.spotify.com/pod/show/unleashing-depin" className="other-icon" target="_blank" rel="noreferrer">
-            <img src="spotify.png" alt="Spotify" height="100%"/>
+            <img src="spotify.png" alt="Spotify" height="100%" />
           </a>
           <a href="https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996" className="other-icon" target="_blank" rel="noreferrer">
-            <img src="apple.png" alt="Apple Podcasts" height="100%"/>
+            <img src="apple.png" alt="Apple Podcasts" height="100%" />
           </a>
           <a href="https://www.youtube.com/@unleashingdepin" className="other-icon" target="_blank" rel="noreferrer">
-            <img src="youtube.png" alt="YouTube" height="100%"/>
+            <img src="youtube.png" alt="YouTube" height="100%" />
           </a>
           <a href="https://twitter.com/UnleashingDeWi" className="other-icon" target="_blank" rel="noreferrer">
-            <img src="x.png" alt="X Formerly Twitter Logo" height="100%"/>
+            <img src="x.png" alt="X Formerly Twitter Logo" height="100%" />
           </a>
           <a href="mailto:hello@unleashingdepin.com" className="other-icon">
-            <img src="mail.png" alt="Email" height="100%"/>
+            <img src="mail.png" alt="Email" height="100%" />
           </a>
         </div>
       </div>
@@ -133,9 +133,9 @@ export default function Home(props) {
       <br></br>
       <div className="find-us-section"><h2>Recent Episodes</h2></div>
       <div>
-        <Carousel swipeable={true} draggable={true} showDots={false} responsive={responsive} ssr={true} infinite={true} 
-          autoPlay={props.deviceType !== "mobile" ? true : false} autoPlaySpeed={3000} keyBoardControl={true} customTransition="all .5" 
-          transitionDuration={500} containerClass="carousel-container" removeArrowOnDeviceType={["tablet", "mobile"]} 
+        <Carousel swipeable={true} draggable={true} showDots={false} responsive={responsive} ssr={true} infinite={true}
+          autoPlay={props.deviceType !== "mobile" ? true : false} autoPlaySpeed={3000} keyBoardControl={true} customTransition="all .5"
+          transitionDuration={500} containerClass="carousel-container" removeArrowOnDeviceType={["tablet", "mobile"]}
           deviceType={props.deviceType} dotListClass="custom-dot-list-style" itemClass="carousel-item-padding-40-px"
         >
           {episodesArray.reverse().map((episode, index) => (
@@ -144,47 +144,77 @@ export default function Home(props) {
               <br></br>
               <div className="SocialButtons">
                 <a href={episode.spotify} className="other-icon" target="_blank" rel="noreferrer">
-                  <img src="spotify.png" alt="Spotify" height="100%"/>
+                  <img src="spotify.png" alt="Spotify" height="100%" />
                 </a>
                 <a href={episode.apple} className="other-icon" target="_blank" rel="noreferrer">
-                  <img src="apple.png" alt="Apple Podcasts" height="100%"/>
+                  <img src="apple.png" alt="Apple Podcasts" height="100%" />
                 </a>
                 <a href={episode.youtube} className="other-icon" target="_blank" rel="noreferrer">
-                  <img src="youtube.png" alt="YouTube" height="100%"/>
+                  <img src="youtube.png" alt="YouTube" height="100%" />
                 </a>
               </div>
             </div>
           ))}
         </Carousel>;
       </div>
+
+      {/* <div className="find-us-section"><h2>Recent Articles</h2></div>
+      <br></br>
+      <div>
+        <Carousel swipeable={true} draggable={true} showDots={false} responsive={responsive} ssr={true} infinite={true}
+          autoPlay={props.deviceType !== "mobile" ? true : false} autoPlaySpeed={3000} keyBoardControl={true} customTransition="all .5"
+          transitionDuration={500} containerClass="carousel-container" removeArrowOnDeviceType={["tablet", "mobile"]}
+          deviceType={props.deviceType} dotListClass="custom-dot-list-style" itemClass="carousel-item-padding-40-px"
+        >
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+          <script async src="https://static.medium.com/embed.js"></script>
+          <a class="m-story" href="https://medium.com/@meta-light/exploring-the-future-of-decentralized-physical-infrastructure-networks-the-mycelium-testbed-f8ea13ca1b4a">
+              Exploring the Future of Decentralized Physical Infrastructure Networks: The Mycelium Testbed
+          </a>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+          <script async src="https://static.medium.com/embed.js"></script>
+          <a class="m-story" href="https://medium.com/@meta-light/exploring-the-future-of-decentralized-physical-infrastructure-networks-the-mycelium-testbed-f8ea13ca1b4a">
+              Exploring the Future of Decentralized Physical Infrastructure Networks: The Mycelium Testbed
+          </a>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+          <script async src="https://static.medium.com/embed.js"></script>
+          <a class="m-story" href="https://medium.com/@meta-light/exploring-the-future-of-decentralized-physical-infrastructure-networks-the-mycelium-testbed-f8ea13ca1b4a">
+              Exploring the Future of Decentralized Physical Infrastructure Networks: The Mycelium Testbed
+          </a>
+          </div>
+        </Carousel>;
+      </div> */}
+
       <div className="find-us-section"><h2>Our Team</h2></div>
       <div className="team-section">
         <a className="team-link">
-          <img src="tyler.jpg" alt="Tyler Boscolo" width="400" height="400"/>
+          <img src="tyler.jpg" alt="Tyler Boscolo" width="400" height="400" />
           <div className="team-text"><h2>Tyler Boscolo</h2></div>
           <div className="team-buttons">
             <a href="https://www.linkedin.com/in/tyler-boscolo" className="other-icon">
-              <img src="/linkedin.png" alt="LinkedIn" height="100%"/>
+              <img src="/linkedin.png" alt="LinkedIn" height="100%" />
             </a>
             <a href="https://twitter.com/tylerboscolo" className="other-icon">
-              <img src="x.png" alt="X Logo" height="100%"/>
+              <img src="x.png" alt="X Logo" height="100%" />
             </a>
           </div>
         </a>
         <a className="team-link">
-          <img src="nick.png" alt="Nick Carpinito" width="400" height="400"/>
+          <img src="nick.png" alt="Nick Carpinito" width="400" height="400" />
           <div className="team-text"><h2>Nick Carpinito</h2></div>
           <div className="team-buttons">
             <a href="https://www.linkedin.com/in/nick-carpinito/" className="other-icon">
-              <img src="linkedin.png" alt="LinkedIn" height="100%"/>
+              <img src="linkedin.png" alt="LinkedIn" height="100%" />
             </a>
             <a href="https://twitter.com/0xmetalight" className="other-icon">
-              <img src="x.png" alt="X Logo" height="100%"/>
+              <img src="x.png" alt="X Logo" height="100%" />
             </a>
           </div>
         </a>
       </div>
-      <div><TypeformEmbed/></div>
+      <div><TypeformEmbed /></div>
     </div>
   )
 }
