@@ -157,36 +157,31 @@ export default function Home(props) {
           ))}
         </Carousel>;
       </div>
-
-      {/* <div className="find-us-section"><h2>Recent Articles</h2></div>
+      <div className="find-us-section"><h2>Recent Articles</h2></div>
       <br></br>
       <div>
         <Carousel swipeable={true} draggable={true} showDots={false} responsive={responsive} ssr={true} infinite={true}
           autoPlay={props.deviceType !== "mobile" ? true : false} autoPlaySpeed={3000} keyBoardControl={true} customTransition="all .5"
           transitionDuration={500} containerClass="carousel-container" removeArrowOnDeviceType={["tablet", "mobile"]}
-          deviceType={props.deviceType} dotListClass="custom-dot-list-style" itemClass="carousel-item-padding-40-px"
-        >
-          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-          <script async src="https://static.medium.com/embed.js"></script>
-          <a class="m-story" href="https://medium.com/@meta-light/exploring-the-future-of-decentralized-physical-infrastructure-networks-the-mycelium-testbed-f8ea13ca1b4a">
-              Exploring the Future of Decentralized Physical Infrastructure Networks: The Mycelium Testbed
-          </a>
+          deviceType={props.deviceType} dotListClass="custom-dot-list-style" itemClass="carousel-item-padding-40-px">
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', maxHeight: '350px' }}>
+            <script async src="https://static.medium.com/embed.js"></script>
+            <a class="m-story" href="https://medium.com/@meta-light/the-ultimate-depin-resource-guide-6837a8abffbb">The Ultimate DePIN Resource Guide</a>
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-          <script async src="https://static.medium.com/embed.js"></script>
-          <a class="m-story" href="https://medium.com/@meta-light/exploring-the-future-of-decentralized-physical-infrastructure-networks-the-mycelium-testbed-f8ea13ca1b4a">
-              Exploring the Future of Decentralized Physical Infrastructure Networks: The Mycelium Testbed
-          </a>
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', maxHeight: '350px' }}>
+            <script async src="https://static.medium.com/embed.js"></script>
+            <a class="m-story" href="https://medium.com/@meta-light/exploring-the-future-of-decentralized-physical-infrastructure-networks-the-mycelium-testbed-f8ea13ca1b4a">Exploring the Future of Decentralized Physical Infrastructure Networks: The Mycelium Testbed</a>
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-          <script async src="https://static.medium.com/embed.js"></script>
-          <a class="m-story" href="https://medium.com/@meta-light/exploring-the-future-of-decentralized-physical-infrastructure-networks-the-mycelium-testbed-f8ea13ca1b4a">
-              Exploring the Future of Decentralized Physical Infrastructure Networks: The Mycelium Testbed
-          </a>
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', maxHeight: '350px' }}>
+            <script async src="https://static.medium.com/embed.js"></script>
+            <a class="m-story" href="https://medium.com/@meta-light/on-excellent-hardware-in-tech-and-its-relationship-with-depin-9c830e400c0b">On Hardware Excellence in Tech, and it’s Relationship with DePIN</a>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', maxHeight: '350px' }}>
+            <script async src="https://static.medium.com/embed.js"></script>
+            <a class="m-story" href="https://medium.com/@meta-light/the-helium-ecosystem-is-evolving-34cc6c9e053d">The Helium Ecosystem is Evolving 🎈</a>
           </div>
         </Carousel>;
-      </div> */}
-
+      </div>
       <div className="find-us-section"><h2>Our Team</h2></div>
       <div className="team-section">
         <a className="team-link">
