@@ -180,6 +180,10 @@ export default function Home(props) {
             <script async src="https://static.medium.com/embed.js"></script>
             <a class="m-story" href="https://medium.com/@meta-light/the-helium-ecosystem-is-evolving-34cc6c9e053d">The Helium Ecosystem is Evolving 🎈</a>
           </div>
+          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', maxHeight: '350px' }}>
+            <script async src="https://static.medium.com/embed.js"></script>
+            <a class="m-story" href="https://medium.com/@meta-light/the-ultimate-helium-resource-guide-3d29063a62a2">The Helium Ecosystem is Evolving 🎈</a>
+          </div>
         </Carousel>;
       </div>
       <div className="find-us-section"><h2>Our Team</h2></div>
