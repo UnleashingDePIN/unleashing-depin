@@ -98,7 +98,38 @@ export default function Home(props) {
       spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-Ep-014---The-State-Of-DeWi-Deployments-With-LongFI-Solutions-e2dotq5",
       apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-ep-014-the-state-of-dewi/id1643813996?i=1000639967281"
     },
-  }
+  };
+  const openPopup = () => {
+    const overlay = document.querySelector('.popup-overlay');
+    if (overlay) {overlay.remove();} else {
+      const overlay = document.createElement('div');
+      overlay.className = 'popup-overlay';
+      overlay.style.position = 'fixed';
+      overlay.style.top = '0';
+      overlay.style.left = '0';
+      overlay.style.width = '100%';
+      overlay.style.height = '100%';
+      overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+      overlay.style.zIndex = '9999';
+      const iframe = document.createElement('iframe');
+      iframe.srcdoc = '<a class="twitter-timeline" data-lang="en" data-theme="light" href="https://twitter.com/UnleashingDeWi"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
+      iframe.style.height = '100%';
+      iframe.style.width = '85%';
+      iframe.style.border = 'none';
+      overlay.appendChild(iframe);
+      const closeBtn = document.createElement('img');
+      closeBtn.src = 'close.png';
+      closeBtn.style.position = 'absolute';
+      closeBtn.style.top = '10px';
+      closeBtn.style.right = '10px';
+      closeBtn.style.height = '40px';
+      closeBtn.style.width = '40px';
+      closeBtn.addEventListener('click', () => {overlay.remove();});
+      overlay.appendChild(closeBtn);
+      document.body.appendChild(overlay);
+    }
+  };
+
   const episodesArray = Object.values(episodes);
   return (
     <div className='body'>
@@ -123,6 +154,7 @@ export default function Home(props) {
           <a href="mailto:hello@unleashingdepin.com" className="other-icon">
             <img src="mail.png" alt="Email" height="100%" />
           </a>
+          {/* <button onClick={openPopup}>Open Twitter Popup</button> */}
         </div>
       </div>
       <div className="hero-text">
