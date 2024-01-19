@@ -158,9 +158,9 @@ export default function Home(props) {
         </div>
       </div>
       <div className="hero-text">
-        <h1>Unleashing DePIN</h1>
-        <h2>Your favorite podcast for everything DePIN!</h2>
-        <h3>Hosted by Tyler Boscolo</h3>
+        <h1 style={{paddingBottom: '30px'}}>Unleashing DePIN</h1>
+        <h2 style={{paddingBottom: '70px'}}>Your favorite podcast for everything DePIN!</h2>
+        <h3 style={{paddingBottom: '50px'}}>Hosted by Tyler Boscolo</h3>
       </div>
       <br></br>
       <div className="find-us-section"><h2>Recent Episodes</h2></div>
