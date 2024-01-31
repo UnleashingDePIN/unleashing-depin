@@ -98,6 +98,12 @@ export default function Home(props) {
       spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-Ep-014---The-State-Of-DeWi-Deployments-With-LongFI-Solutions-e2dotq5",
       apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-ep-014-the-state-of-dewi/id1643813996?i=1000639967281"
     },
+    ep15: {
+      image: "Thumbnails/ep15.png",
+      youtube: "https://www.youtube.com/watch?v=r5WK4wLN5No",
+      spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-015---A-Conversation-With-David-Vorick-From-Glow-e2f5cqq",
+      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-015-a-conversation-with-david/id1643813996?i=1000643591133"
+    },
   };
   const openPopup = () => {
     const overlay = document.querySelector('.popup-overlay');
