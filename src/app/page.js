@@ -118,7 +118,7 @@ export default function Home(props) {
       overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
       overlay.style.zIndex = '9999';
       const iframe = document.createElement('iframe');
-      iframe.srcdoc = '<a class="twitter-timeline" data-lang="en" data-theme="light" href="https://twitter.com/UnleashingDeWi"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
+      iframe.srcdoc = '<a class="twitter-timeline" data-lang="en" data-theme="light" href="https://twitter.com/DePINUnleashed"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
       iframe.style.height = '100%';
       iframe.style.width = '85%';
       iframe.style.border = 'none';
@@ -154,7 +154,7 @@ export default function Home(props) {
           <a href="https://www.youtube.com/@unleashingdepin" className="other-icon" target="_blank" rel="noreferrer">
             <img src="youtube.png" alt="YouTube" height="100%" />
           </a>
-          <a href="https://twitter.com/UnleashingDeWi" className="other-icon" target="_blank" rel="noreferrer">
+          <a href="https://twitter.com/DePINUnleashed" className="other-icon" target="_blank" rel="noreferrer">
             <img src="x.png" alt="X Formerly Twitter Logo" height="100%" />
           </a>
           <a href="mailto:hello@unleashingdepin.com" className="other-icon">
