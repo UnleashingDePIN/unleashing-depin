@@ -104,6 +104,12 @@ export default function Home(props) {
       spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-015---A-Conversation-With-David-Vorick-From-Glow-e2f5cqq",
       apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-015-a-conversation-with-david/id1643813996?i=1000643591133"
     },
+    {/*ep16: {
+      image: "Thumbnails/ep16.png",
+      youtube: "",
+      spotify: "",
+      apple: ""
+    },*/}
   };
   const openPopup = () => {
     const overlay = document.querySelector('.popup-overlay');
