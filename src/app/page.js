@@ -106,9 +106,9 @@ export default function Home(props) {
     },
     ep16: {
       image: "Thumbnails/ep16.png",
-      youtube: "",
-      spotify: "",
-      apple: ""
+      youtube: "https://www.youtube.com/watch?v=ECh3nGHDW_s",
+      spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-016---Providing-Onchain-Location-Proofs-With-The-Foam-Protocol-e2fsmae",
+      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-016-providing-onchain-location-proofs/id1643813996?i=1000645650392"
     },
   };
   const openPopup = () => {
