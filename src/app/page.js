@@ -112,9 +112,9 @@ export default function Home(props) {
     },
     ep17: {
       image: "Thumbnails/ep17.png",
-      youtube: "",
-      spotify: "",
-      apple: ""
+      youtube: "https://www.youtube.com/watch?v=sNRcwD_CfIA",
+      spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-017---Building-A-Community-Powered-Flight-Tracking-Network-With-Wingbits-e2g3dhd",
+      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-017-building-a-community-powered/id1643813996?i=1000646333343"
     },
   };
   const openPopup = () => {
