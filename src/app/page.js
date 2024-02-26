@@ -49,26 +49,13 @@ export default function Home(props) {
   return (
     <div className='body'>
       <div className="menu">
-        <div>
-          <a href="https://unleashingdepin.com" className="logo" />
-          <img src="unleashing-depin.png" alt="Unleashing DePIN" width="200" height="75" />
-        </div>
+        <div><a href="https://unleashingdepin.com" className="logo" /><img src="unleashing-depin.png" alt="Unleashing DePIN" width="200" height="75"/></div>
         <div className="SocialButtons">
-          <a href="https://podcasters.spotify.com/pod/show/unleashing-depin" className="other-icon" target="_blank" rel="noreferrer">
-            <img src="spotify.png" alt="Spotify" height="100%" />
-          </a>
-          <a href="https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996" className="other-icon" target="_blank" rel="noreferrer">
-            <img src="apple.png" alt="Apple Podcasts" height="100%" />
-          </a>
-          <a href="https://www.youtube.com/@unleashingdepin" className="other-icon" target="_blank" rel="noreferrer">
-            <img src="youtube.png" alt="YouTube" height="100%" />
-          </a>
-          <a href="https://twitter.com/DePINUnleashed" className="other-icon" target="_blank" rel="noreferrer">
-            <img src="x.png" alt="X Formerly Twitter Logo" height="100%" />
-          </a>
-          <a href="mailto:hello@unleashingdepin.com" className="other-icon">
-            <img src="mail.png" alt="Email" height="100%" />
-          </a>
+          <a href="https://podcasters.spotify.com/pod/show/unleashing-depin" className="other-icon" target="_blank" rel="noreferrer"><img src="spotify.png" alt="Spotify" height="100%" /></a>
+          <a href="https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996" className="other-icon" target="_blank" rel="noreferrer"><img src="apple.png" alt="Apple Podcasts" height="100%"/></a>
+          <a href="https://www.youtube.com/@unleashingdepin" className="other-icon" target="_blank" rel="noreferrer"><img src="youtube.png" alt="YouTube" height="100%"/></a>
+          <a href="https://twitter.com/DePINUnleashed" className="other-icon" target="_blank" rel="noreferrer"><img src="x.png" alt="X Formerly Twitter Logo" height="100%" /></a>
+          <a href="mailto:hello@unleashingdepin.com" className="other-icon"><img src="mail.png" alt="Email" height="100%"/></a>
           {/* <button onClick={openPopup}>Open Twitter Popup</button> */}
         </div>
       </div>
@@ -90,15 +77,9 @@ export default function Home(props) {
               <img src={episode.image} alt={`Unleashing DePIN Episode ${index + 1}`} width='80%' draggable="false" />
               <br></br>
               <div className="SocialButtons">
-                <a href={episode.spotify} className="other-icon" target="_blank" rel="noreferrer">
-                  <img src="spotify.png" alt="Spotify" height="100%" />
-                </a>
-                <a href={episode.apple} className="other-icon" target="_blank" rel="noreferrer">
-                  <img src="apple.png" alt="Apple Podcasts" height="100%" />
-                </a>
-                <a href={episode.youtube} className="other-icon" target="_blank" rel="noreferrer">
-                  <img src="youtube.png" alt="YouTube" height="100%" />
-                </a>
+                <a href={episode.spotify} className="other-icon" target="_blank" rel="noreferrer"><img src="spotify.png" alt="Spotify" height="100%"/></a>
+                <a href={episode.apple} className="other-icon" target="_blank" rel="noreferrer"><img src="apple.png" alt="Apple Podcasts" height="100%"/></a>
+                <a href={episode.youtube} className="other-icon" target="_blank" rel="noreferrer"><img src="youtube.png" alt="YouTube" height="100%" /></a>
               </div>
             </div>
           ))}
@@ -129,34 +110,26 @@ export default function Home(props) {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', maxHeight: '600px' }}>
             <script async src="https://static.medium.com/embed.js"></script>
-            <a class="m-story" href="https://medium.com/@meta-light/the-ultimate-helium-resource-guide-3d29063a62a2">The Helium Ecosystem is Evolving 🎈</a>
+            <a class="m-story" href="https://medium.com/@meta-light/the-ultimate-helium-resource-guide-3d29063a62a2">The Ultimate Helium Resource Guide</a>
           </div>
         </Carousel>;
       </div>
       <div className="find-us-section"><h2>Our Team</h2></div>
       <div className="team-section">
         <a className="team-link" style={{ padding: '0,20%' }} >
-          <img src="tyler.jpg" alt="Tyler Boscolo" width="300" height="300" style={{ borderRadius: '10px' }}/>
+          <img src="tyler.jpg" alt="Tyler Boscolo" width="300" height="300" style={{borderRadius: '10px'}}/>
           <div className="team-text"><h2>Tyler Boscolo</h2></div>
           <div className="team-buttons">
-            <a href="https://www.linkedin.com/in/tylerboscolo" className="other-icon">
-              <img src="/linkedin.png" alt="LinkedIn" height="100%" />
-            </a>
-            <a href="https://twitter.com/tylerboscolo" className="other-icon">
-              <img src="x.png" alt="X Logo" height="100%" />
-            </a>
+            <a href="https://www.linkedin.com/in/tylerboscolo" className="other-icon"><img src="/linkedin.png" alt="LinkedIn" height="100%"/></a>
+            <a href="https://twitter.com/tylerboscolo" className="other-icon"><img src="x.png" alt="X Logo" height="100%" /></a>
           </div>
         </a>
         <a className="team-link" style={{ padding: '0,20%' }} >
           <img src="cat.png" alt="Nick Carpinito" width="300" height="300"style={{ borderRadius: '10px' }}/>
           <div className="team-text"><h2>Nick Carpinito</h2></div>
           <div className="team-buttons">
-            <a href="https://www.linkedin.com/in/nick-carpinito/" className="other-icon">
-              <img src="linkedin.png" alt="LinkedIn" height="100%" />
-            </a>
-            <a href="https://twitter.com/0xmetalight" className="other-icon">
-              <img src="x.png" alt="X Logo" height="100%" />
-            </a>
+            <a href="https://www.linkedin.com/in/nick-carpinito/" className="other-icon"><img src="linkedin.png" alt="LinkedIn" height="100%" /></a>
+            <a href="https://twitter.com/0xmetalight" className="other-icon"><img src="x.png" alt="X Logo" height="100%" /></a>
           </div>
         </a>
       </div>
