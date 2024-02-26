@@ -130,7 +130,7 @@ export default function Home(props) {
       overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
       overlay.style.zIndex = '9999';
       const iframe = document.createElement('iframe');
-      iframe.srcdoc = '<a class="twitter-timeline" data-lang="en" data-theme="light" href="https://twitter.com/DePINUnleashed"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
+      iframe.srcdoc = '<a class="twitter-timeline" data-lang="en" data-theme="light" href="https://twitter.com/depinunleashed"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>';
       iframe.style.height = '100%';
       iframe.style.width = '85%';
       iframe.style.border = 'none';
@@ -251,7 +251,7 @@ export default function Home(props) {
           </div>
         </a>
         <a className="team-link" style={{ padding: '0,20%' }} >
-          <img src="nick.png" alt="Nick Carpinito" width="300" height="300"style={{ borderRadius: '10px' }}/>
+          <img src="cat.png" alt="Nick Carpinito" width="300" height="300"style={{ borderRadius: '10px' }}/>
           <div className="team-text"><h2>Nick Carpinito</h2></div>
           <div className="team-buttons">
             <a href="https://www.linkedin.com/in/nick-carpinito/" className="other-icon">
