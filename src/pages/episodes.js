@@ -2,7 +2,7 @@ import React from 'react';
 import '../app/styles.css';
 import '../app/globals.css';
 import Header from '../app/components/header.js';
-import episodes from '../app/episodes.js';
+import episodes from '../app/episodesData.js';
 
 
 const Episodes = () => {
