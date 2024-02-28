@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import openTwitterPopup from '../settings/openPopup.js';
 
 const Header = () => {
   return (
@@ -13,7 +14,7 @@ const Header = () => {
           <a href="https://www.youtube.com/@unleashingdepin" className="other-icon" target="_blank" rel="noreferrer"><img src="youtube.png" alt="YouTube" height="100%"/></a>
           <a href="https://twitter.com/DePINUnleashed" className="other-icon" target="_blank" rel="noreferrer"><img src="x.png" alt="X Formerly Twitter Logo" height="100%" /></a>
           <a href="mailto:hello@unleashingdepin.com" className="other-icon"><img src="mail.png" alt="Email" height="100%"/></a>
-          {/* <button onClick={openPopup}>Open Twitter Popup</button> */}
+          {/* <button onClick={openTwitterPopup}>Open Twitter Popup</button> */}
         </div>
     </div>
   );
