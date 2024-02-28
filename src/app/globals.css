@@ -43,6 +43,10 @@ body {
     transform: scale(1.1);
 }
 
+.episodes-grid {
+    margin: 0 auto;
+}
+
 .hero-text {
     text-align: center;
     /* margin: 150px 0; */
@@ -69,6 +73,14 @@ body {
     margin-bottom: 20px;
     color: #ffffff;
     font-style: italic;
+}
+
+.hero-text h4 {
+    font-family: "Bebas Neue-Regular", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-style: bold;
 }
 
 @media all and (max-width: 850px) {
