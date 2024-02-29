@@ -13,15 +13,12 @@ import Team from './components/team.js';
 import carouselResponsive from './settings/carouselResponsive.js';
 
 export default function Home(props) {
-
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://static.medium.com/embed.js';
     script.async = true;
     document.body.appendChild(script);
-    return () => {document.body.removeChild(script);};}, []);
-
-
+    return () => { document.body.removeChild(script); };}, []);
   const episodesArray = Object.values(episodes);
   return (
     <div className='body'>
@@ -61,7 +58,6 @@ export default function Home(props) {
           deviceType={props.deviceType} dotListClass="custom-dot-list-style" itemClass="carousel-item-padding-40-px">
           {blogs.map((blog, index) => (
             <div key={index} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', maxHeight: '350px' }}>
-              {typeof window !== 'undefined' && <script async src="https://static.medium.com/embed.js"></script>}
               <a className="m-story" href={blog.url}>{blog.title}</a>
             </div>
           ))}
