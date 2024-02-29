@@ -19,9 +19,8 @@ const Episodes = () => {
             <div className="episodes-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px', maxWidth: '1200px', margin: '0 auto' }}>
                 {episodesArray.reverse().map((episode, index) => (
                     <div key={index} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%', width: '100%' }}>
-                        <img src={episode.image} width="100%" alt={`Unleashing DePIN Episode ${index + 1}`} />
-                        <h3 style={{ margin: '10px 0' }}>{episode.title}</h3>
-                        <p style={{ margin: '0 0 10px 0' }}>{episode.description}</p>
+                        <img src={episode.image} width="100%" alt={`Unleashing DePIN Episode ${index + 1}`}/>
+                        <br></br>
                         <div className="SocialButtons">
                             <a href={episode.spotify} className="other-icon" target="_blank" rel="noreferrer"><img src="spotify.png" alt="Spotify" height="100%"/></a>
                             <a href={episode.apple} className="other-icon"  target="_blank" rel="noreferrer"><img src="apple.png" alt="Apple Podcasts" height="100%"/></a>
@@ -30,6 +29,7 @@ const Episodes = () => {
                     </div>
                 ))}
             </div>
+            <br></br>
         </div>
     );
 };

@@ -25,6 +25,7 @@ const Blog = () => {
           </div>
         ))}
       </div>
+      <br></br>
     </div>
   );
 };
