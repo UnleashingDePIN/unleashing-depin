@@ -101,6 +101,12 @@ const episodes = {
       spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-017---Building-A-Community-Powered-Flight-Tracking-Network-With-Wingbits-e2g3dhd",
       apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-017-building-a-community-powered/id1643813996?i=1000646333343"
     },
+    ep18: {
+      image: "Thumbnails/ep18.png",
+      youtube: "https://www.youtube.com/watch?v=m6nvIRID31g",
+      spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-018---A-Conversation-With-Susmit--Co-Founder-and-CTO-of-Huddle01-e2gqq6o",
+      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-018-a-conversation-with-susmit/id1643813996?i=1000648540411"
+    },
   };
 
   export default episodes;
