@@ -17,7 +17,7 @@ const EpisodePage = ({ episodeNumber }) => {
           <div className="EpisodeButtons">
             <a href={episode.spotify} className="episodes-page-icon" target="_blank" rel="noreferrer"><img src="spotify.png" alt="Spotify" height="100%"/></a>
             <a href={episode.apple} className="episodes-page-icon"  target="_blank" rel="noreferrer"><img src="apple.png" alt="Apple Podcasts" height="100%"/></a>
-            <a href={episode.youtube} className="episodes-page-icon"  target="_blank" rel="noreferrer"><img src="youtube.png" alt="YouTube" height="100%"/></a>
+            <a href={episode.youtube} className="episodes-page-icon"  target="_blank" rel="noreferrer"><img src="youtube.png" alt="YouTube" height="100%"/></a> 
           </div>
         </div>
       </div>
