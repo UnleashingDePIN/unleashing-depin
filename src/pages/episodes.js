@@ -4,21 +4,19 @@ import '../app/globals.css';
 import Header from '../app/components/header.js';
 import episodes from '../app/data/episodesData.js';
 
-
 const Episodes = () => {
     const episodesArray = Object.values(episodes);
-
     return (
         <div className="body">
             <Header/>
             <div className="hero-text">
-                <h1 style={{paddingBottom: '30px'}}>Unleashing DePIN</h1>
-                <h2 style={{paddingBottom: '70px'}}>Episode Library</h2>
+                <h1>Unleashing DePIN</h1>
+                <h2>Episode Library</h2>
             </div>
             <br></br><br></br>
-            <div className="episodes-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px', maxWidth: '1200px', margin: '0 auto' }}>
+            <div className="episodes-grid">
                 {episodesArray.reverse().map((episode, index) => (
-                    <div key={index} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%', width: '100%' }}>
+                    <div key={index} className="episode-carousel-card">
                         <a href={`/${episodesArray.length - index}`}><img src={episode.image} width="100%" alt={`Unleashing DePIN Episode ${index + 1}`}/></a>
                         <br></br>
                         <div className="SocialButtons">

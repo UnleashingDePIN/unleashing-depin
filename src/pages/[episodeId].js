@@ -13,12 +13,7 @@ const EpisodesPages = () => {
     const episode = episodes[episodeKey];
     console.log(episodeId);
     if (!episode) {return (<div className='body'><Header/><div className='hero-text'><h1>Nice Try</h1><h2>Episode {episodeId} is still in progress</h2><h3>Check back soon, anon</h3></div></div>);}
-    return (
-      <div>
-        <Header/>
-        <EpisodePage episodeNumber={episodeId}/>
-      </div>
-    );
+    return (<div><Header/><EpisodePage episodeNumber={episodeId}/></div>);
   };
 
 export default EpisodesPages;

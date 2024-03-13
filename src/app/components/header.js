@@ -1,13 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
-import openTwitterPopup from '../settings/openPopup.js';
+// import openTwitterPopup from '../settings/openPopup.js';
 
 const Header = () => {
   return (
     <div className="menu">
         <Link href="/" className="logo"><img src="unleashing-depin.png" alt="Unleashing DePIN" width="200" height="75"/></Link>
-        {/* <Link href="/episodes" className="menu-item"><div className="hero-text"><h4>Episodes</h4></div></Link>
-        <Link href="/blog" className="menu-item"><div className="hero-text"><h4>Blog</h4></div></Link> */}
+        <Link href="/episodes" className="menu-item"><div className="hero-text"><h4>Episodes</h4></div></Link>
+        <Link href="/blog" className="menu-item"><div className="hero-text"><h4>Blog</h4></div></Link>
+        <Link href="/denver" className="menu-item"><div className="hero-text"><h4>ETH Denver</h4></div></Link>
         <div className="SocialButtons">
           <a href="https://podcasters.spotify.com/pod/show/unleashing-depin" className="other-icon" target="_blank" rel="noreferrer"><img src="spotify.png" alt="Spotify" height="100%" /></a>
           <a href="https://podcasts.apple.com/us/podcast/unleashing-depin/id1643813996" className="other-icon" target="_blank" rel="noreferrer"><img src="apple.png" alt="Apple Podcasts" height="100%"/></a>

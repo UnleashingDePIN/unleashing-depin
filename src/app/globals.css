@@ -26,6 +26,11 @@ body {
     size: 10px;
 }
 
+.eth-denver-pdf {
+    width: 100%;
+    height: 100%;
+}
+
 .apple-logo-icon {
     width: 21.94px;
     height: 24px;
@@ -73,7 +78,8 @@ body {
     font-family: "Bebas Neue-Regular", sans-serif;
     font-size: 4.5rem;
     margin-bottom: 10px;
-    color: #ffffff
+    color: #ffffff;
+    padding-bottom: 30px;
 }
 
 .hero-text h2 {
@@ -81,6 +87,7 @@ body {
     font-size: 2.5rem;
     margin-bottom: 10px;
     color: #11ca65;
+    padding-bottom: 70px;
 }
 
 .hero-text h3 {
@@ -89,6 +96,7 @@ body {
     margin-bottom: 20px;
     color: #ffffff;
     font-style: italic;
+    padding-bottom: 30px;
 }
 
 .hero-text h4 {
@@ -141,6 +149,7 @@ body {
 .team-link {
     margin: 20px 100px 20px 100px;
     transition: transform 0.3s ease-in-out;
+    padding: 0,20%;
 }
 
 .team-text h2 {
@@ -150,12 +159,42 @@ body {
     color: #11ca65;
 }
 
+.team-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
 .team-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     size: 10px;
 }
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Keeps the text color consistent */
+    width: 100%; /* Ensures the anchor tag takes up the full width of its container */
+}
+
+.episode-carousel-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 
 .social-logos {
     display: flex;
@@ -167,6 +206,23 @@ body {
     display: flex;
     justify-content: space-around;
     margin: 0 100px 0 100px;
+}
+
+.medium-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    height: 350px; 
+}
+
+.episodes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .social-logo-link {
@@ -191,6 +247,67 @@ body {
 .center-carousel {
     display: flex;
     justify-content: center;
+}
+
+.toggle-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.modalStyle {
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.modalContentStyle {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    height: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    overflow: auto;
+}
+  
+.closeButtonStyle {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+.deckButton {
+    background-color: #11ca65;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {

@@ -24,9 +24,9 @@ export default function Home(props) {
     <div className='body'>
       <Header/>
       <div className="hero-text">
-        <h1 style={{paddingBottom: '30px'}}>Unleashing DePIN</h1>
-        <h2 style={{paddingBottom: '70px'}}>Your favorite podcast for everything DePIN!</h2>
-        <h3 style={{paddingBottom: '30px'}}>Hosted by Tyler Boscolo</h3>
+        <h1>Unleashing DePIN</h1>
+        <h2>Your favorite podcast for everything DePIN!</h2>
+        <h3>Hosted by Tyler Boscolo</h3>
       </div>
       <br></br>
       <div className="find-us-section"><h2>Recent Episodes</h2></div>
@@ -34,11 +34,12 @@ export default function Home(props) {
         <Carousel swipeable={true} draggable={true} showDots={false} responsive={carouselResponsive} ssr={true} infinite={true}
           autoPlay={props.deviceType !== "mobile" ? true : false} autoPlaySpeed={3000} keyBoardControl={true} customTransition="all .5"
           transitionDuration={500} containerClass="carousel-container" removeArrowOnDeviceType={["tablet", "mobile"]}
-          deviceType={props.deviceType} dotListClass="custom-dot-list-style" itemClass="carousel-item-padding-40-px"
-        >
+          deviceType={props.deviceType} dotListClass="custom-dot-list-style" itemClass="carousel-item-padding-40-px">
           {episodesArray.reverse().map((episode, index) => (
-            <div key={index} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-              <a href={`/${episodesArray.length - index}`}><img src={episode.image} alt={`Unleashing DePIN Episode ${index + 1}`} width='80%' draggable="false"/></a>
+            <div key={index} className="episode-carousel-card">
+              <a href={`/${episodesArray.length - index}`} className='carousel-item'>
+                <img src={episode.image} alt={`Unleashing DePIN Episode ${index + 1}`} width='80%' draggable="false"/>
+              </a>
               <br></br>
               <div className="SocialButtons">
                 <a href={episode.spotify} className="other-icon" target="_blank" rel="noreferrer"><img src="spotify.png" alt="Spotify" height="100%"/></a>
@@ -56,15 +57,11 @@ export default function Home(props) {
           autoPlay={props.deviceType !== "mobile" ? true : false} autoPlaySpeed={3000} keyBoardControl={true} customTransition="all .5"
           transitionDuration={500} containerClass="carousel-container" removeArrowOnDeviceType={["tablet", "mobile"]}
           deviceType={props.deviceType} dotListClass="custom-dot-list-style" itemClass="carousel-item-padding-40-px">
-          {blogs.map((blog, index) => (
-            <div key={index} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', maxHeight: '350px' }}>
-              <a className="m-story" href={blog.url}>{blog.title}</a>
-            </div>
-          ))}
+          {blogs.map((blog, index) => (<div className="medium-container" key={index}><a className="m-story" href={blog.url}>{blog.title}</a></div>))}
         </Carousel>;
       </div>
       <Team/>
-      <div><TypeformEmbed /></div>
+      <div><TypeformEmbed/></div>
     </div>
   )
 }

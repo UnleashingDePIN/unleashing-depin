@@ -15,12 +15,12 @@ const Blog = () => {
     <div className="body">
       <Header />
       <div className="hero-text">
-        <h1 style={{ paddingBottom: '30px' }}>Unleashing DePIN</h1>
-        <h2 style={{ paddingBottom: '70px' }}>Blog Posts</h2>
+        <h1>Unleashing DePIN</h1>
+        <h2>Blog Posts</h2>
       </div>
-      <div className="episodes-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px', maxWidth: '1200px', margin: '0 auto' }}>
+      <div className="episodes-grid">
         {blogs.map((blog, index) => (
-          <div key={index} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '350px' }}>
+          <div className="medium-container" key={index}>
             <a className="m-story" href={blog.url}>{blog.title}</a>
           </div>
         ))}

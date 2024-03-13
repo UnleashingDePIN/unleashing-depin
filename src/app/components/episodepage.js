@@ -13,13 +13,12 @@ const EpisodePage = ({ episodeNumber }) => {
   const handleSpotifyIframeClick = () => {setContentType(contentType !== 'spotify' ? 'spotify' : null);};
   const handleAppleIframeClick = () => {setContentType(contentType !== 'apple' ? 'apple' : null);};
   const handleYoutubeIframeClick = () => {setContentType(contentType !== 'youtube' ? 'youtube' : null);};
-
   return (
     <div>
       <div className="hero-text">
         <h2>{`Unleashing DePIN Episode ${episodeNumber}`}</h2>
         <br></br>
-        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%', width: '100%' }}>
+        <div className='toggle-container'>
           {contentType === 'spotify' ? (<iframe src={spotifyEmbedLink} width="800px" frameborder="0" scrolling='no'></iframe>
           ) : contentType === 'apple' ? (<iframe src={appleEmbedLink} width="800px" frameborder="0" scrolling='no'></iframe>
           ) : contentType === 'youtube' ? (<iframe width="700px" height="394px" src={youtubeEmbedLink} frameborder="0"></iframe>
