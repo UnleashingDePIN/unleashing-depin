@@ -38,7 +38,7 @@ export default function Home(props) {
         >
           {episodesArray.reverse().map((episode, index) => (
             <div key={index} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-              <img src={episode.image} alt={`Unleashing DePIN Episode ${index + 1}`} width='80%' draggable="false" />
+              <a href={`/${episodesArray.length - index}`}><img src={episode.image} alt={`Unleashing DePIN Episode ${index + 1}`} width='80%' draggable="false"/></a>
               <br></br>
               <div className="SocialButtons">
                 <a href={episode.spotify} className="other-icon" target="_blank" rel="noreferrer"><img src="spotify.png" alt="Spotify" height="100%"/></a>

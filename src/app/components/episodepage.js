@@ -4,28 +4,15 @@ import '../styles.css';
 import '../globals.css';
 
 const EpisodePage = ({ episodeNumber }) => {
+  console.log(episodeNumber);
   const episode = episodes[`ep${episodeNumber}`];
   const [contentType, setContentType] = useState(null);
   const spotifyEmbedLink = episode.spotify.replace('/episodes/', '/embed/episodes/');
   const appleEmbedLink = episode.apple.replace('podcasts.apple.com', 'embed.podcasts.apple.com');
   const youtubeEmbedLink = episode.youtube.replace('watch?v=', 'embed/');
-
-  if (!episode) { return <div><h1 color='white'>Episode not found</h1></div>; }
-
-  const handleSpotifyIframeClick = () => {
-    console.log(spotifyEmbedLink);
-    setContentType(contentType !== 'spotify' ? 'spotify' : null);
-  };
-
-  const handleAppleIframeClick = () => {
-    console.log(appleEmbedLink);
-    setContentType(contentType !== 'apple' ? 'apple' : null);
-  };
-
-  const handleYoutubeIframeClick = () => {
-    console.log(youtubeEmbedLink);
-    setContentType(contentType !== 'youtube' ? 'youtube' : null);
-  };
+  const handleSpotifyIframeClick = () => {setContentType(contentType !== 'spotify' ? 'spotify' : null);};
+  const handleAppleIframeClick = () => {setContentType(contentType !== 'apple' ? 'apple' : null);};
+  const handleYoutubeIframeClick = () => {setContentType(contentType !== 'youtube' ? 'youtube' : null);};
 
   return (
     <div>
