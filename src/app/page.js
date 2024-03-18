@@ -62,7 +62,8 @@ export default function Home(props) {
         </Carousel>;
       </div>
       <Team/>
-      {/* <Ecosystem/> */}
+      <Ecosystem/>
+      <br></br><br></br>
       <div><TypeformEmbed/></div>
     </div>
   )
