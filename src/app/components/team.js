@@ -9,7 +9,7 @@ const Team = () => {
                     <img src="tyler.jpg" alt="Tyler Boscolo" className='team-img'/>
                     <div className="team-text"><h2>Tyler Boscolo</h2></div>
                     <div className="team-buttons">
-                        <a href="https://www.linkedin.com/in/tylerboscolo" className="other-icon"><img src="/linkedin.png" alt="LinkedIn" height="100%" /></a>
+                        <a href="https://www.linkedin.com/in/tylerboscolo" className="other-icon"><img src="linkedin.png" alt="LinkedIn" height="100%" /></a>
                         <a href="https://twitter.com/tylerboscolo" className="other-icon"><img src="x.png" alt="X Logo" height="100%" /></a>
                     </div>
                 </a>

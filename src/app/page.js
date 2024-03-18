@@ -10,6 +10,7 @@ import episodes from './data/episodesData.js';
 import blogs from './data/blogsData.js';
 import Header from './components/header.js';
 import Team from './components/team.js';
+import Ecosystem from './components/ecosystem.js';
 import carouselResponsive from './settings/carouselResponsive.js';
 
 export default function Home(props) {
@@ -61,6 +62,7 @@ export default function Home(props) {
         </Carousel>;
       </div>
       <Team/>
+      {/* <Ecosystem/> */}
       <div><TypeformEmbed/></div>
     </div>
   )
