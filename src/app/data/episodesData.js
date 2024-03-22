@@ -107,6 +107,12 @@ const episodes = {
       spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-018---A-Conversation-With-Susmit--Co-Founder-and-CTO-of-Huddle01-e2gqq6o",
       apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-018-a-conversation-with-susmit/id1643813996?i=1000648540411"
     },
+    ep19: {
+      image: "Thumbnails/ep19.png",
+      youtube: "",
+      spotify: "",
+      apple: ""
+    },
   };
 
   export default episodes;
