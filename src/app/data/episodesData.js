@@ -111,7 +111,7 @@ const episodes = {
       image: "Thumbnails/ep19.png",
       youtube: "https://www.youtube.com/watch?v=-cFxWkPCfGc",
       spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-019---VoIP-Pioneer-and-Vonage-Co-Founder-Jeff-Pulver-Discusses-The-Future-Of-DePIN-Powered-Communications-e2heca8",
-      apple: ""
+      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-019-voip-pioneer-and-vonage-co/id1643813996?i=1000650147271"
     },
   };
 
