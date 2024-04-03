@@ -116,8 +116,8 @@ const episodes = {
     ep20: {
       image: "Thumbnails/ep20.png",
       youtube: "https://www.youtube.com/watch?v=HXWEDosfQmw",
-      spotify: "",
-      apple: ""
+      spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-020---An-Update-On-XNET-WIth-WiFi-Product-Manager-Russ-e2hu41a",
+      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-020-an-update-on-xnet-with-wifi/id1643813996?i=1000651344325"
     },
   };
 
