@@ -125,6 +125,12 @@ const episodes = {
       spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-021---Building-a-DAO-for-deploying-DePIN-With-DeWi-Cats-e2i8dc7",
       apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-021-building-a-dao-for-deploying/id1643813996?i=1000652169869"
     },
+    ep22: {
+      image: "Thumbnails/ep22.png",
+      youtube: "https://www.youtube.com/watch?v=3vnbToVizt8",
+      spotify: "",
+      apple: ""
+    },
   };
 
   export default episodes;
