@@ -128,8 +128,8 @@ const episodes = {
     ep22: {
       image: "Thumbnails/ep22.png",
       youtube: "https://www.youtube.com/watch?v=3vnbToVizt8",
-      spotify: "",
-      apple: ""
+      spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-022---A-Mobile-Powered-Decentralized-Compute-Network-With-Acurast-e2isqh9",
+      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-022-a-mobile-powered-decentralized/id1643813996?i=1000653704300"
     },
   };
 
