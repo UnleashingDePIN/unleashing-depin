@@ -131,6 +131,12 @@ const episodes = {
       spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-022---A-Mobile-Powered-Decentralized-Compute-Network-With-Acurast-e2isqh9",
       apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-022-a-mobile-powered-decentralized/id1643813996?i=1000653704300"
     },
+    ep23: {
+      image: "Thumbnails/ep23.png",
+      youtube: "https://www.youtube.com/watch?v=zMTd6080aks",
+      spotify: "",
+      apple: ""
+    },
   };
 
   export default episodes;
