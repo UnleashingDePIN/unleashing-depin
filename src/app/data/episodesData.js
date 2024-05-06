@@ -134,8 +134,8 @@ const episodes = {
     ep23: {
       image: "Thumbnails/ep23.png",
       youtube: "https://www.youtube.com/watch?v=zMTd6080aks",
-      spotify: "",
-      apple: ""
+      spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-023---A-Modular-Full-Stack-Infrastructure-Platform-For-DePIN-With-IoTeX-e2j76ie",
+      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-023-a-modular-full-stack/id1643813996?i=1000654473387"
     },
   };
 
