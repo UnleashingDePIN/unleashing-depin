@@ -143,5 +143,11 @@ const episodes = {
       spotify: "https://open.spotify.com/episode/0MoMU6jwhlVfKH90mNlsnE?si=2RPB2ThMQBel6oUPuqEhVA",
       apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-024-revolutionizing-game-development/id1643813996?i=1000659565209"
     },
+    ep25: {
+      image: "Thumbnails/ep25.png",
+      youtube: "https://www.youtube.com/watch?v=id2k-Oaj4yg",
+      spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-025---DePIN-Powered-Compute-For-The-AI-Revolution-With-Nosana-e2lq3qa",
+      apple: ""
+    },
   };
   export default episodes;
