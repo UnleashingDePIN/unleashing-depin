@@ -147,7 +147,7 @@ const episodes = {
       image: "Thumbnails/ep25.png",
       youtube: "https://www.youtube.com/watch?v=id2k-Oaj4yg",
       spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-025---DePIN-Powered-Compute-For-The-AI-Revolution-With-Nosana-e2lq3qa",
-      apple: ""
+      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-025-depin-powered-compute-for-the-ai/id1643813996?i=1000661685495"
     },
   };
   export default episodes;
