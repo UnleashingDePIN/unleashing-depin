@@ -4,7 +4,7 @@ import "./globals.css";
 import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ["latin"] });
-export const metadata: Metadata = {title: "Unleashing DePIN", description: "Your go-to resource for everything DePIN!"};
+export const metadata: Metadata = {title: "Unleashing DePIN", description: "Your go-to resource for everything DePIN, including your favorite DePIN Podcast, DePIN Pulse earning aggregator tool, DePIN articles and more!"};
 
 export default function RootLayout({children}: Readonly<{children: React.ReactNode;}>) {
   return (
