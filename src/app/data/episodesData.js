@@ -137,17 +137,6 @@ const episodes = {
       spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-023---A-Modular-Full-Stack-Infrastructure-Platform-For-DePIN-With-IoTeX-e2j76ie",
       apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-023-a-modular-full-stack/id1643813996?i=1000654473387"
     },
-    ep24: {
-      image: "Thumbnails/ep24.png",
-      youtube: "https://www.youtube.com/watch?v=r8ZQjZ8133M",
-      spotify: "https://open.spotify.com/episode/0MoMU6jwhlVfKH90mNlsnE?si=2RPB2ThMQBel6oUPuqEhVA",
-      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-024-revolutionizing-game-development/id1643813996?i=1000659565209"
-    },
-    ep25: {
-      image: "Thumbnails/ep25.png",
-      youtube: "https://www.youtube.com/watch?v=id2k-Oaj4yg",
-      spotify: "https://podcasters.spotify.com/pod/show/unleashing-depin/episodes/Unleashing-DePIN-025---DePIN-Powered-Compute-For-The-AI-Revolution-With-Nosana-e2lq3qa",
-      apple: "https://podcasts.apple.com/us/podcast/unleashing-depin-025-depin-powered-compute-for-the-ai/id1643813996?i=1000661685495"
-    },
   };
+
   export default episodes;
