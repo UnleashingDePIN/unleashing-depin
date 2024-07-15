@@ -47,7 +47,7 @@ export default function Component() {
               </div>
               <Link href="/episodes">
                 <div className="flex justify-center mt-auto">
-                  <Button className="px-2 py-1 w-3/5">Dive In</Button>
+                  <Button className="px-2 py-1 w-3/5">Listen Now</Button>
                 </div>
               </Link>
             </div>
