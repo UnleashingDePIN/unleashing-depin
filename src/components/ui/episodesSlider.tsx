@@ -7,6 +7,7 @@ import { YoutubeIcon, PodcastIcon, SpotifyIcon } from "@/components/icons";
 import { Episodes } from "@/types/types";
 import dynamic from 'next/dynamic';
 import "react-multi-carousel/lib/styles.css";
+import { Button } from "@/components/ui/button";
 const Carousel = dynamic(() => import("react-multi-carousel"), { ssr: false });
 
 const EpisodesSlider = () => {
@@ -50,6 +51,11 @@ const EpisodesSlider = () => {
           );
         })}
       </Carousel>
+      <div className="mt-8 flex justify-center">
+      <Link href="/episodes">
+        <Button className="px-2 py-1 w-64">View All Episodes</Button>
+      </Link>
+    </div>
     </section>
   );
 };
