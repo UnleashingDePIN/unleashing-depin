@@ -5,6 +5,7 @@ import Link from "next/link";
 import { YoutubeIcon, SpotifyIcon, PodcastIcon } from "@/components/icons";
 import { Episodes } from "@/types/types";
 
+
 const EpisodesGrid = () => {
   const [episodesData, setEpisodesData] = useState<Episodes>({});
   useEffect(() => {
