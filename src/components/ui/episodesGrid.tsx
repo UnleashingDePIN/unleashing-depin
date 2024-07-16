@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { YoutubeIcon, SpotifyIcon, PodcastIcon } from "@/components/icons";
 import { Episodes } from "@/types/types";
+import { Button } from "@/components/ui/button"
 
 const EpisodesGrid = () => {
   const [episodesData, setEpisodesData] = useState<Episodes>({});
@@ -32,6 +33,11 @@ const EpisodesGrid = () => {
                   <Link href={episode.apple} className="text-blue-500 hover:text-blue-600" prefetch={false}><PodcastIcon className="h-6 w-6"/></Link>
                 </div>
               </CardContent>
+              <Link href="/episodes">
+                <div className="flex justify-center mt-auto">
+                  <Button className="px-2 py-1 w-3/5">Listen Now</Button>
+                </div>
+              </Link>
             </Card>
           );
         })}
