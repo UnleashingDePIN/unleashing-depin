@@ -20,6 +20,22 @@ export default function Component() {
         </header>
         <section className="px-4 py-4 md:px-8 lg:px-12 lg:max-w-7xl lg:mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+            <div className="px-2 py-4 bg-gray-100 rounded-lg overflow-hidden flex flex-col h-full transition-shadow hover:shadow-md">
+            <div className="flex justify-center">
+              <Image src="/unleashing-depin-logo.png" alt="Unleashing DePIN Podcast" width={500} height={300} className="w-full rounded-lg" />
+            </div>
+            <div className="text-center p-4 flex flex-col flex-grow justify-between space-y-4 h-full"> 
+              <div>
+                <h3 className="text-xl justify-center font-bold">Unleashing DePIN Podcast</h3>
+                <p className="text-gray-600">Your favorite podcast for everything DePIN</p>
+              </div>
+              <Link href="/episodes">
+                <div className="flex justify-center mt-auto">
+                  <Button className="px-2 py-1 w-3/5">Listen Now</Button>
+                </div>
+              </Link>
+            </div>
+          </div>
           <div className="px-2 py-4 bg-gray-100 rounded-lg overflow-hidden flex flex-col h-full transition-shadow hover:shadow-md">
               <div className="flex justify-center">
                 <Image src="/depinpulse.png" alt="DePIN Pulse" width={500} height={300} className="rounded-lg w-full" />
@@ -32,22 +48,6 @@ export default function Component() {
               <Link href="/">
                 <div className="flex justify-center mt-auto">
                   <Button className="px-2 py-1 w-3/5">Coming Soon</Button>
-                </div>
-              </Link>
-            </div>
-          </div>
-          <div className="px-2 py-4 bg-gray-100 rounded-lg overflow-hidden flex flex-col h-full transition-shadow hover:shadow-md">
-            <div className="flex justify-center">
-              <Image src="/unleashing-depin-logo.png" alt="Unleashing DePIN Podcast" width={500} height={300} className="w-full rounded-lg" />
-            </div>
-            <div className="text-center p-4 flex flex-col flex-grow justify-between space-y-4 h-full"> 
-              <div>
-                <h3 className="text-xl justify-center font-bold">Unleashing DePIN Podcast</h3>
-                <p className="text-gray-600">Your favorite podcast for everything DePIN</p>
-              </div>
-              <Link href="/episodes">
-                <div className="flex justify-center mt-auto">
-                  <Button className="px-2 py-1 w-3/5">Listen Now</Button>
                 </div>
               </Link>
             </div>
