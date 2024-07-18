@@ -30,7 +30,7 @@ const Ecosystem: React.FC = () => {
       <section className="px-4 pt-4 md:px-8 lg:px-12 lg:max-w-7xl lg:mx-auto">
         <h3 className="text-2xl pt-4 font-bold text-center">Ecosystem Partners</h3>
         <div className="px-12 mx-auto">
-          <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={3000} showDots={false} arrows={false}>
+          <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={8000} showDots={false} arrows={false}>
             {images.map((image, index) => (
               <div key={index} className="mx-2 flex flex-col h-[200px]" ref={el => { imageRefs.current[index] = el; }}>
                 <img src={image} alt={`Ecosystem Logo ${index}`} className="w-36 h-full object-contain" />
