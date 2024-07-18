@@ -29,7 +29,7 @@ const BlogSlider = () => {
   return (
     <section className="px-4 pt-4 md:px-8 lg:px-12 lg:max-w-7xl lg:mx-auto">
       <h3 className="text-2xl pt-4 font-bold mb-6 text-center">Recent Articles</h3>
-      <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={3000} arrows={false}>
+      <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={8000} arrows={false}>
         {blogs.slice().reverse().map((blog, index) => (
           <Card key={index} className="bg-gray-100 mx-2 flex flex-col h-full">
             <CardContent className="flex flex-col flex-grow">
