@@ -31,7 +31,7 @@ const EpisodesSlider = () => {
   return (
     <section className="px-4 pt-4 md:px-8 lg:px-12 lg:max-w-7xl lg:mx-auto">
       <h3 className="text-2xl pt-4 font-bold mb-6 text-center">Recent Episodes</h3>
-      <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={8000} arrows={false}> 
+      <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={5000} arrows={false}> 
         {Object.keys(episodesData).reverse().map((key) => {
           const episode = episodesData[key];
           return (
