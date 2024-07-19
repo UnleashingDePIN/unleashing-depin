@@ -27,7 +27,6 @@
     "react-dom": "^18",
     "react-multi-carousel": "^2.8.5",
     "react-slack": "^0.0.1",
-    "sib-api-v3-sdk": "^8.5.0",
     "tailwind-merge": "^2.3.0",
     "tailwindcss": "^2.0.0",
     "tailwindcss-animate": "^1.0.7"
