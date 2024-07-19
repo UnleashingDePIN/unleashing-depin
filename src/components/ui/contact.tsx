@@ -5,38 +5,17 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    FULL_NAME: "",
-    COMPANY: "",
-    EMAIL: "",
-  });
-
+  const [formData, setFormData] = useState({FULL_NAME: "", COMPANY: "", EMAIL: ""});
   const [message, setMessage] = useState("");
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { id, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [id]: value }));
-  };
-
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {const { id, value } = e.target; setFormData((prevData) => ({ ...prevData, [id]: value }));};
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form submitted", formData); // Log form data on submit
-  
+    console.log("Form submitted", formData);
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-  
+      const response = await fetch('/api/contact', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(formData)});
       const result = await response.json();
-      if (response.ok) {
-        setMessage(result.message);
-      } else {
-        setMessage(result.message || "Your subscription could not be saved. Please try again.");
-      }
+      if (response.ok) {setMessage(result.message);} 
+      else {setMessage(result.message || "Your subscription could not be saved. Please try again.");}
     } catch (error) {
       console.error(error);
       setMessage("Your subscription could not be saved. Please try again.");

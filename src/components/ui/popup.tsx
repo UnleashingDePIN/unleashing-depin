@@ -1,6 +1,8 @@
 'use client';
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
 
 const popup = ({ handleShowModal }: { handleShowModal: () => void }) => {
   const [email, setEmail] = useState('');
@@ -24,19 +26,18 @@ const popup = ({ handleShowModal }: { handleShowModal: () => void }) => {
           </svg>
           <span className="sr-only">Close popup</span>
         </button>
-
         <div className="p-5">
           <div className="text-center">
             <p className="mb-10 text-2xl font-semibold leading-5 text-slate-900">Get Notified About DePIN Pulse</p>
           </div>
           <form className="w-full px-7" onSubmit={handleSubmit}>
-            <label htmlFor="email" className="sr-only">Email address</label>
-            <input
+            <Label htmlFor="email" className="sr-only">Email address</Label>
+            <Input
               name="email"
               type="email"
               autoComplete="email"
               required
-              className="block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+              className="text-white"
               placeholder="Email Address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
