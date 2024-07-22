@@ -1,6 +1,7 @@
 import React from "react"
 import Header from "@/components/ui/header"
 import BlogsGrid from "@/components/ui/blogsGrid"
+import Contact from "@/components/ui/contact"
 import "../app/globals.css";
 
 export default function Blog() {
@@ -13,6 +14,7 @@ export default function Blog() {
           <h2 className="text-2xl mb-6">Learn more about the evolving DePIN Landscape</h2>
         </header>
         <BlogsGrid/>
+        <Contact/>
       </main>
     </div>
   )

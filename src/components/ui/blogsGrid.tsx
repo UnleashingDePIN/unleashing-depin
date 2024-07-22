@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import Contact from "@/components/ui/contact";
 import Link from "next/link";
 
 const BlogsGrid = () => {
@@ -27,7 +26,6 @@ const BlogsGrid = () => {
           </Card>
         ))}
       </div>
-    <Contact/>
     </section>
   );
 };

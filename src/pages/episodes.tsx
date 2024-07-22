@@ -1,6 +1,7 @@
 import React from "react"
 import Header from "@/components/ui/header"
 import EpisodesGrid from "@/components/ui/episodesGrid";
+import Contact from "@/components/ui/contact";
 import "../app/globals.css";
 
 export default function Episodes() {
@@ -13,6 +14,7 @@ export default function Episodes() {
           <h2 className="text-2xl mb-6">Hosted by Tyler Boscolo</h2>
         </header>
         <EpisodesGrid/>
+        <Contact/>
       </main>
     </div>
   )

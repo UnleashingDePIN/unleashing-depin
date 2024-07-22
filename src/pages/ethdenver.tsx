@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button"
 import Header from "@/components/ui/header"
+import Contact from "@/components/ui/contact"
 import "../app/globals.css";
 
 export default function EthDenver() {
@@ -29,6 +30,7 @@ export default function EthDenver() {
             </div>
           </div>
         )}
+        <Contact/>
       </main>
     </div>
   )

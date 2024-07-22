@@ -32,7 +32,7 @@ const EpisodePage: React.FC<EpisodePageProps> = ({ episodeNumber }) => {
   const handleYoutubeIframeClick = () => { setContentType(contentType !== 'youtube' ? 'youtube' : null); };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-white">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-white">
       <div className="text-center">
         <h2 className="font-bebas text-4xl text-black mb-2">{`Unleashing DePIN Episode ${episodeNumber}`}</h2>
         <br></br>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import Header from "@/components/ui/header"
+import Contact from "@/components/ui/contact"
 import "../app/globals.css";
 
 export default function DepinDegens() {
@@ -22,6 +23,7 @@ export default function DepinDegens() {
         <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
           {images.map((src, index) => (<img key={index} src={src} alt={`Image ${index + 1}`} className="w-full h-auto" loading="lazy"/>))}
         </section>
+        <Contact/>
       </main>
     </div>
   )
