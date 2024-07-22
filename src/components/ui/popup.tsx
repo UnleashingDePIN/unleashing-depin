@@ -15,6 +15,7 @@ const popup = ({ handleShowModal }: { handleShowModal: () => void }) => {
         body: JSON.stringify({ EMAIL: email })
       });
       if (response.ok) {
+        alert('Success! You will be notified when we launch.');
         handleShowModal(); // Close the modal on successful subscription
       } else {
         alert('Subscription failed. Please try again.');
