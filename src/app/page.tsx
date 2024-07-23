@@ -1,6 +1,5 @@
 import React from "react"
 import { Button } from "@/components/ui/button"
-import PopupWrapper from '@/app/PopupWrapper'
 import Link from "next/link"
 import Image from "next/image"
 import Header from "@/components/ui/header"
@@ -46,9 +45,11 @@ export default function Component() {
                 <h3 className="text-xl justify-center font-bold">DePIN Pulse</h3>
                 <p className="text-gray-600">Our DePIN Opportunities Aggregator</p>
               </div>
-              <div className="flex justify-center mt-auto">
-                <PopupWrapper />
-              </div>
+              <Link href="https://pulse.unleashingdepin.com/" target="_blank">
+                  <div className="flex justify-center mt-auto">
+                    <Button className="px-2 py-1 w-3/5">Get Notified</Button>
+                  </div>
+                </Link>
             </div>
           </div>
           <div className="px-2 py-2 bg-gray-100 rounded-lg overflow-hidden flex flex-col h-full transition-shadow hover:shadow-md">
