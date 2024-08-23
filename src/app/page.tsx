@@ -45,9 +45,9 @@ export default function Component() {
                 <h3 className="text-xl justify-center font-bold">DePIN Pulse</h3>
                 <p className="text-gray-600">Our DePIN Opportunities Aggregator</p>
               </div>
-              <Link href="https://pulse.unleashingdepin.com/" target="_blank">
+              <Link href="https://depinpulse.app/" target="_blank">
                   <div className="flex justify-center mt-auto">
-                    <Button className="px-2 py-1 w-3/5">Get Notified</Button>
+                    <Button className="px-2 py-1 w-3/5">Discover Opportunities</Button>
                   </div>
                 </Link>
             </div>
@@ -71,9 +71,9 @@ export default function Component() {
                   <h3 className="text-xl justify-center font-bold">DePIN Services</h3>
                   <p className="text-gray-600">Get expert advice on your project</p>
                 </div>
-                <Link href="/">
+                <Link href="/services">
                   <div className="flex justify-center mt-auto">
-                    <Button variant="destructive" className="px-2 py-1 w-3/5">Coming Soon</Button>
+                    <Button className="px-2 py-1 w-3/5">Learn More</Button>
                   </div>
                 </Link>
               </div>

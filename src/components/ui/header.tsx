@@ -18,14 +18,26 @@ const Header = () => {
             </SheetTrigger>
             <SheetContent side="left" className="w-[300px]">
               <div className="flex flex-col items-start space-y-4 p-4">
-                <Link href="/"><img src="/ud-black.png"></img></Link>
-                <div className="flex flex-col space-y-2">
-                  {/* <Link href="https://pulse.unleashingdepin.com/" target="_blank" className="hover:text-ud-green" prefetch={false}>DePIN Pulse</Link> */}
-                  <Link href="/episodes" className="hover:text-ud-green" prefetch={false}>Podcast</Link>
-                  {/* <Link href="/services" className="hover:text-ud-green" prefetch={false}>Services</Link> */}
-                  <Link href="/blog" className="hover:text-ud-green" prefetch={false}>Articles</Link>
-                  <Link href="/ethdenver" className="hover:text-ud-green" prefetch={false}>ETH Denver</Link>
-                  <Link href="/depindegens" className="hover:text-ud-green" prefetch={false}>DePIN Degens Events</Link>
+                <Link href="/" className="flex justify-center"><img src="/ud-black.png" className="w-4/5 transition-shadow duration-300 hover:shadow-lg" alt="Unleashing DePIN Logo"/></Link>
+                <div className="flex flex-col space-y-5 items-center w-full">
+                  <Button className="w-full max-w-[200px] px-4 py-2 hover:text-black">
+                    <Link href="https://depinpulse.app/" target="_blank" prefetch={false}>DePIN Pulse</Link>
+                  </Button>
+                  <Button className="w-full max-w-[200px] px-4 py-2 hover:text-black">
+                    <Link href="/episodes" prefetch={false}>Podcast</Link>
+                  </Button>
+                  <Button className="w-full max-w-[200px] px-4 py-2 hover:text-black">
+                    <Link href="/services" prefetch={false}>Services</Link>
+                  </Button>
+                  <Button className="w-full max-w-[200px] px-4 py-2 hover:text-black">
+                    <Link href="/blog" prefetch={false}>Articles</Link>
+                  </Button>
+                  <Button className="w-full max-w-[200px] px-4 py-2 hover:text-black">
+                    <Link href="/ethdenver" prefetch={false}>ETH Denver</Link>
+                  </Button>
+                  <Button className="w-full max-w-[200px] px-4 py-2 hover:text-black">
+                    <Link href="/depindegens" prefetch={false}>DePIN Degens Events</Link>
+                  </Button>
                 </div>
               </div>
             </SheetContent>
