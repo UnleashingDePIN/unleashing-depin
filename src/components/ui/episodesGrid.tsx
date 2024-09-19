@@ -27,17 +27,19 @@ const EpisodesGrid = () => {
         {Object.keys(episodesData).reverse().map((key) => {
           const episode = episodesData[key];
           return (
-            <Card key={key} className="bg-gray-100">
-              <CardContent>
+            <Card key={key} className="bg-gray-100 overflow-hidden flex flex-col">
+              <div className="w-full pt-[56%] relative">
                 <Image 
                   src={getImageSrc(episode.image)} 
                   alt="Episode thumbnail" 
-                  width={500} 
-                  height={300} 
-                  className="mb-4 mt-4 rounded-lg" 
+                  layout="fill"
+                  objectFit="cover"
+                  className="absolute top-0 left-0 w-full h-full"
                 />
+              </div>
+              <CardContent className="p-4 flex-grow flex flex-col">
                 <h4 className="text-lg text-black font-bold mb-2">Episode {parseInt(key.replace('ep', '')) + 1}</h4>
-                <div className="mt-6 flex justify-between px-8 py-1">
+                <div className="mt-auto flex justify-between px-8 py-1">
                   <Link href={episode.youtube} className="text-blue-500 hover:text-blue-600" prefetch={false}><YoutubeIcon className="h-6 w-6"/></Link>
                   <Link href={episode.spotify} className="text-blue-500 hover:text-blue-600" prefetch={false}><SpotifyIcon className="h-6 w-6"/></Link>
                   <Link href={episode.apple} className="text-blue-500 hover:text-blue-600" prefetch={false}><PodcastIcon className="h-6 w-6"/></Link>
