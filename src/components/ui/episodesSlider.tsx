@@ -28,6 +28,10 @@ const EpisodesSlider = () => {
   };
   if (!isClient) {return null;}
 
+  const getImageSrc = (imagePath: string) => {
+    return imagePath.startsWith('http') ? imagePath : `/${imagePath}`;
+  };
+
   return (
     <section className="px-4 pt-4 md:px-8 lg:px-12 lg:max-w-7xl lg:mx-auto">
       <h3 className="text-2xl pt-4 font-bold mb-6 text-center">Recent Episodes</h3>
@@ -38,7 +42,15 @@ const EpisodesSlider = () => {
             <div key={key}>
               <Card className="bg-gray-100 mx-2">
                 <CardContent>
-                  <Link href={`/${parseInt(key) + 1}`}><Image src={`/${episode.image}`} alt="Episode thumbnail" width={500} height={300} className="mb-4 mt-4 rounded-lg"/></Link>
+                  <Link href={`/${parseInt(key) + 1}`}>
+                    <Image 
+                      src={getImageSrc(episode.image)}
+                      alt="Episode thumbnail" 
+                      width={500} 
+                      height={300} 
+                      className="mb-4 mt-4 rounded-lg"
+                    />
+                  </Link>
                   <h4 className="text-lg text-black font-bold mb-2">Episode {parseInt(key.replace('ep', '')) + 1}</h4>
                   <div className="mt-6 flex justify-between px-8 py-1">
                     <Link href={episode.youtube} className="text-blue-500 hover:text-blue-600" prefetch={false}><YoutubeIcon className="h-6 w-6"/></Link>
