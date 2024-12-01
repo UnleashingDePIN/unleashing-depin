@@ -12,10 +12,8 @@ const EpisodePage: React.FC<EpisodePageProps> = ({ episodeNumber }) => {
       try {
         const response = await fetch('/api/episodes');
         const data = await response.json();
-        console.log('Fetched data:', data);
         if (episodeNumber > data.length || episodeNumber < 1) {console.error(`Episode number ${episodeNumber} is out of bounds`); return;}
         const selectedEpisode = data[episodeNumber - 1];
-        console.log('Selected episode:', selectedEpisode);
         setEpisode(selectedEpisode);
       } catch (error) {
         console.error('Error fetching episodes:', error);
